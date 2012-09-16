@@ -1,0 +1,82 @@
+
+Invoking autoreconf in build directory: /home/will/Programming/C++/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /home/will/Programming/C++/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()17:23:20 **** Build of configuration Build (GNU) for project Pilha ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+Invoking autoreconf in build directory: /home/will/Programming/C++/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()17:23:24 **** Incremental Build of configuration Build (GNU) for project Pilha ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+Invoking autoreconf in build directory: /home/will/Programming/C++/RepoED/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /home/will/Programming/C++/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /home/will/Programming/C++/RepoED/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /home/will/Programming/C++/RepoED/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()22:01:02 **** Build of configuration Build (GNU) for project Pilha ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+Invoking autoreconf in build directory: /home/will/Programming/C++/RepoED/EstruturasDeDados/.git/EstruturasDeDados/.git/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /home/will/Programming/C++/ED/Pilha
+
+sh -c "autoreconf -i" 
+sh: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()

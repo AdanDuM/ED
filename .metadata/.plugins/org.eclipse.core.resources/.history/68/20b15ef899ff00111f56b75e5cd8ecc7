@@ -1,0 +1,24 @@
+/*
+ * Pilha.h
+ *
+ *  Created on: Sep 13, 2012
+ *      Author: will
+ */
+
+#ifndef PILHA_H_
+#define PILHA_H_
+
+int empilhar(int dado);
+int desenpilhar();
+int mostrar();
+int limpar();
+
+class Pilha {
+public:
+	Pilha();
+	virtual ~Pilha();
+
+
+};
+#endif /* PILHA_H_ */
+
