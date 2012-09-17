@@ -24,9 +24,6 @@ public:
 private:
 	int topo;
 	int pilha[MAXPILHA];
-	virtual bool pilhaVazia();
-	virtual bool pilhaCheia();
-
 };
 
 } /* namespace Pilha */

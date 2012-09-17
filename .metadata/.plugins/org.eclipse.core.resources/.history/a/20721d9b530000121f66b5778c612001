@@ -28,7 +28,7 @@ namespace Pilha {
 	}
 	int Pilha::desempilhar(){
 		if(topo == PILHAVAZIA)
-			return PILHAVAZIA;
-		return pilha[--topo];
+
+		return 0;
 	}
 } /* namespace Pilha */

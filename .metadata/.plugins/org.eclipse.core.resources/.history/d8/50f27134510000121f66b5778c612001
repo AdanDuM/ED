@@ -22,13 +22,10 @@ namespace Pilha {
 	int Pilha::empilhar(int dado){
 		if(topo == MAXPILHA)
 			return PILHACHEIA;
-		topo++;
-		pilha[topo] = dado;
-		return 0;
+
+
 	}
 	int Pilha::desempilhar(){
-		if(topo == PILHAVAZIA)
-			return PILHAVAZIA;
-		return pilha[--topo];
+			return 0;
 	}
 } /* namespace Pilha */

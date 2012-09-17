@@ -31,4 +31,7 @@ namespace Pilha {
 			return PILHAVAZIA;
 		return pilha[--topo];
 	}
+	int[] Pilha::mostrar(){
+
+	}
 } /* namespace Pilha */

@@ -1,0 +1,28 @@
+/*
+ * Pilha.h
+ *
+ *  Created on: Sep 16, 2012
+ *      Author: will
+ */
+
+#ifndef PILHA_H_
+#define PILHA_H_
+
+namespace Pilha {
+
+class Pilha {
+public:
+	Pilha();
+	virtual ~Pilha();
+	int empilhar(int dado);
+	int desempilhar();
+	int mostrarPilha();
+	int limpar();
+private:
+	int topo = -1;
+	int MAXPILHA = -1;
+	int PILHAVAZIA =-2;
+};
+
+} /* namespace Pilha */
+#endif /* PILHA_H_ */

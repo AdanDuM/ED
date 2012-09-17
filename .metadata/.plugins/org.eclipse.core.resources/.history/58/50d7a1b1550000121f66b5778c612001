@@ -19,14 +19,11 @@ public:
 	virtual ~Pilha();
 	virtual int empilhar(int);
 	virtual int desempilhar();
-	virtual int mostrarPilha();
+	virtual int[] mostrarPilha();
 	virtual int limpar();
 private:
 	int topo;
 	int pilha[MAXPILHA];
-	virtual bool pilhaVazia();
-	virtual bool pilhaCheia();
-
 };
 
 } /* namespace Pilha */

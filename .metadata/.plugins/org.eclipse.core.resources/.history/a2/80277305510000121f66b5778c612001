@@ -10,9 +10,6 @@
 
 namespace Pilha {
 
-int MAXPILHA = 30;
-int PILHACHEIA = -2;
-int PILHAVAZIA = -1;
 class Pilha {
 public:
 	Pilha();
@@ -23,10 +20,9 @@ public:
 	virtual int limpar();
 private:
 	int topo;
-	int pilha[MAXPILHA];
-	virtual bool pilhaVazia();
-	virtual bool pilhaCheia();
-
+	int MAXPILHA;
+	int PILHACHEIA;
+	int pilha[];
 };
 
 } /* namespace Pilha */
