@@ -25,13 +25,15 @@ public:
 	void iniciarJogadas();
 private:
 	int totalDiscos;
-	int jogadas;
+	int posMenor;
+	Disco *menor;
 	Pilha fonte;
 	Pilha meio;
 	Pilha destino;
 	void resolverPar();
 	void resolverImpar();
-	void fazerJogadaSeguinte(int posicaoMenor);
+	void moverMenor();
+	void fazerJogadaSeguinte();
 };
 
 } /* namespace Fila */

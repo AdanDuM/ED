@@ -25,14 +25,14 @@ int Pilha::empilha(Disco *novo) {
 	}
 	if (vazia()) {
 		topo = novo;
-		std::cout << "Movendo de " << novo->origem << " para " << id << std::endl;
+		std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->tamanho<< std::endl;
 		tamanho++;
 		return 0;
 	}
 	novo->proximo = topo;
 	topo = novo;
 	tamanho++;
-	std::cout << "Movendo de " << novo->origem << " para " << id << std::endl;
+	std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->tamanho<< std::endl;
 	return 0;
 }
 Disco* Pilha::desempilha() {
