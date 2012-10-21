@@ -17,7 +17,7 @@ public:
 	Disco(int origem, int tamanho);
 	virtual ~Disco();
 	int origem;
-	int tamanho;
+	int diametro;
 	Disco *proximo;
 };
 

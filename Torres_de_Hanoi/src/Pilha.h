@@ -21,6 +21,7 @@ public:
 	virtual ~Pilha();
 	int id;
 	int tamanho;
+	int diametroTopo;
 	Disco *topo;
 	int empilha(Disco *novo);
 	Disco* desempilha();

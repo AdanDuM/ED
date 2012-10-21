@@ -35,30 +35,42 @@ void TorresDeHanoi::fazerJogadaSeguinte() {
 	if (destino.tamanho < totalDiscos) {
 		switch (posMenor) {
 		case 1:
-		/*	if (meio.topo == 0) {
+			if ((destino.tamanho != 0)
+					&& (meio.diametroTopo > destino.diametroTopo)) {
 				meio.empilha(destino.desempilha());
-				break;
-			} else if (destino.topo == 0) {
+			} else {
+				if (fonte.tamanho == 0) {
+					meio.empilha(destino.desempilha());
+					break;
+				}
 				destino.empilha(meio.desempilha());
-				break;
 			}
-*/
-			if (((meio.topo == 0) & (!(destino.topo == 0))) || (meio.topo->tamanho > destino.topo->tamanho) )
-				meio.empilha(destino.desempilha());
-			else
-				destino.empilha(meio.desempilha());
 			break;
 		case 2:
-			if (((fonte.topo == 0) & (destino.topo == 0)) || (fonte.topo->tamanho > destino.topo->tamanho))
+			if ((destino.tamanho != 0)
+					&& (fonte.diametroTopo > destino.diametroTopo)) {
 				fonte.empilha(destino.desempilha());
-			else
+			} else {
+				if (fonte.tamanho == 0) {
+
+					fonte.empilha(destino.desempilha());
+					break;
+				}
 				destino.empilha(fonte.desempilha());
+			}
 			break;
 		case 3:
-			if (!((fonte.topo == 0) && (!(meio.topo == 0))) || fonte.topo->tamanho > meio.topo->tamanho)
+			if ((meio.tamanho != 0)
+					&& (fonte.diametroTopo > meio.diametroTopo)) {
 				fonte.empilha(meio.desempilha());
-			else
+			} else {
+				if (fonte.tamanho == 0) {
+
+					fonte.empilha(meio.desempilha());
+					break;
+				}
 				meio.empilha(fonte.desempilha());
+			}
 			break;
 		}
 	}
@@ -99,7 +111,6 @@ void TorresDeHanoi::moverMenor() {
 		}
 	}
 }
-
 void TorresDeHanoi::resolverPar() {
 
 	menor = fonte.desempilha();

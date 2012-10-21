@@ -14,6 +14,7 @@ Pilha::Pilha() {
 	// TODO Auto-generated constructor stub
 	topo = 0;
 	tamanho = 0;
+	diametroTopo =0;
 }
 
 Pilha::~Pilha() {
@@ -25,14 +26,16 @@ int Pilha::empilha(Disco *novo) {
 	}
 	if (vazia()) {
 		topo = novo;
-		std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->tamanho<< std::endl;
+		std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->diametro<< std::endl;
+		diametroTopo = topo->diametro;
 		tamanho++;
 		return 0;
 	}
 	novo->proximo = topo;
 	topo = novo;
+	diametroTopo = topo->diametro;
 	tamanho++;
-	std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->tamanho<< std::endl;
+	std::cout << "Movendo de " << novo->origem << " para " << id <<" o "<< novo->diametro<< std::endl;
 	return 0;
 }
 Disco* Pilha::desempilha() {
@@ -41,8 +44,12 @@ Disco* Pilha::desempilha() {
 	}
 	Disco* sai = topo;
 	topo = topo->proximo;
-	tamanho--;
 	sai->origem = id;
+	tamanho--;
+	if(vazia())
+		diametroTopo = 0;
+	else
+		diametroTopo = topo->diametro;
 	return sai;
 }
 bool Pilha::vazia() {
