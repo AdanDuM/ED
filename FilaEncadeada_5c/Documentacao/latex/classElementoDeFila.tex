@@ -1,0 +1,117 @@
+\hypertarget{classElementoDeFila}{
+\section{ElementoDeFila Class Reference}
+\label{classElementoDeFila}\index{ElementoDeFila@{ElementoDeFila}}
+}
+
+
+{\ttfamily \#include $<$ElementoDeFila.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classElementoDeFila_a77669d0928094d50d9c87658b5f7c20c}{ElementoDeFila} ()
+\item 
+\hyperlink{classElementoDeFila_a98e1748e65aaed8bd15cd64c618579ed}{ElementoDeFila} (\hyperlink{classInfoFila}{InfoFila} $\ast$\hyperlink{classElementoDeFila_a0e3028ae1401650c0d2f079cffe62731}{info})
+\item 
+virtual \hyperlink{classElementoDeFila_aa5bb4960252e258f4918922fb638af9a}{$\sim$ElementoDeFila} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classElementoDeFila_a00a6a658ef48b7b5a6d6f1a9b60c3b94}{proximo}
+\item 
+\hyperlink{classInfoFila}{InfoFila} $\ast$ \hyperlink{classElementoDeFila_a0e3028ae1401650c0d2f079cffe62731}{info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um objeto pertencente a uma fila genérica. 
+
+Definition at line 25 of file ElementoDeFila.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classElementoDeFila_a77669d0928094d50d9c87658b5f7c20c}{
+\index{ElementoDeFila@{ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\index{ElementoDeFila@{ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\subsubsection[{ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}ElementoDeFila::ElementoDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classElementoDeFila_a77669d0928094d50d9c87658b5f7c20c}
+Método que constrói um objeto que representa uma elemento de uma fila encadeado. 
+
+Definition at line 14 of file ElementoDeFila.cpp.
+
+\hypertarget{classElementoDeFila_a98e1748e65aaed8bd15cd64c618579ed}{
+\index{ElementoDeFila@{ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\index{ElementoDeFila@{ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\subsubsection[{ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}ElementoDeFila::ElementoDeFila (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoFila} $\ast$}]{inf}
+\end{DoxyParamCaption}
+)}}
+\label{classElementoDeFila_a98e1748e65aaed8bd15cd64c618579ed}
+Método que constrói um objeto que representa uma elemento de uma fila encadeado. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoFila}{InfoFila}} & $\ast$inf = ponteiro para um objeto da classe \hyperlink{classInfoFila}{InfoFila}, este objeto deve conter as informações do elemento da fila que está sendo construido. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file ElementoDeFila.cpp.
+
+
+
+References info.
+
+\hypertarget{classElementoDeFila_aa5bb4960252e258f4918922fb638af9a}{
+\index{ElementoDeFila@{ElementoDeFila}!$\sim$ElementoDeFila@{$\sim$ElementoDeFila}}
+\index{$\sim$ElementoDeFila@{$\sim$ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\subsubsection[{$\sim$ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}ElementoDeFila::$\sim$ElementoDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classElementoDeFila_aa5bb4960252e258f4918922fb638af9a}
+Destrutor que exclui um elemento da Fila. 
+
+Definition at line 31 of file ElementoDeFila.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classElementoDeFila_a0e3028ae1401650c0d2f079cffe62731}{
+\index{ElementoDeFila@{ElementoDeFila}!info@{info}}
+\index{info@{info}!ElementoDeFila@{ElementoDeFila}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoFila}$\ast$ {\bf ElementoDeFila::info}}}
+\label{classElementoDeFila_a0e3028ae1401650c0d2f079cffe62731}
+
+
+Definition at line 31 of file ElementoDeFila.h.
+
+
+
+Referenced by CabecaDeFila::desenfileirar(), ElementoDeFila(), and CabecaDeFila::limpar().
+
+\hypertarget{classElementoDeFila_a00a6a658ef48b7b5a6d6f1a9b60c3b94}{
+\index{ElementoDeFila@{ElementoDeFila}!proximo@{proximo}}
+\index{proximo@{proximo}!ElementoDeFila@{ElementoDeFila}}
+\subsubsection[{proximo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila}$\ast$ {\bf ElementoDeFila::proximo}}}
+\label{classElementoDeFila_a00a6a658ef48b7b5a6d6f1a9b60c3b94}
+
+
+Definition at line 30 of file ElementoDeFila.h.
+
+
+
+Referenced by CabecaDeFila::desenfileirar(), CabecaDeFila::enfileirar(), and CabecaDeFila::limpar().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ElementoDeFila_8h}{ElementoDeFila.h}\item 
+src/\hyperlink{ElementoDeFila_8cpp}{ElementoDeFila.cpp}\end{DoxyCompactItemize}

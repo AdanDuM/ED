@@ -1,0 +1,68 @@
+insere
+
+
+/*if (raiz->cheio()) {
+	 Nodo * antiga = raiz;
+	 raiz = new Nodo(false);
+	 //		cout << "cheiao" << endl;
+	 raiz->inserirFilho(antiga);
+	 dividirNodo(raiz, 0, antiga);
+	 //	cout << "sai div" << endl;
+	 insereNaoCheio(chave, raiz);
+	 } else {
+	 insereNaoCheio(chave, raiz);
+	 }*/
+
+
+divide
+
+
+/*
+ int mediana = (ORDEM - 1);
+
+ for (i = mediana + 1; i < (ORDEM * 2) - 1; i++) {
+ irmao->insereEmOrdem(filho->chaves[i]);
+ filho->chaves[i] = 0;
+ }
+ if(!filho->folha){
+ for (i = mediana + 1; i < (ORDEM * 2); i++) {
+ irmao->inserirFilho(filho->filhos[i]);
+ }
+ }
+ filho->numeroChaves = ORDEM - 1;
+
+ int pos = pai->insereEmOrdem(filho->chaves[mediana]);
+ filho->chaves[mediana] = 0;
+
+ //pai->inserirFilho(filho, pos);
+ pos++;
+ pai->inserirFilho(irmao,pos);*/
+
+
+
+non cheio
+
+
+
+/*Nodo* irmao = new Nodo();
+ irmao->folha = filho->folha;
+ int mediana = (ORDEM - 1);
+ int i;
+ for (i = mediana + 1; i < (ORDEM * 2) - 1; i++) {
+ irmao->insereEmOrdem(filho->chaves[i]);
+ irmao->inserirFilho(filho->filhos[i]);
+ filho->chaves[i] = 0;
+ }
+ irmao->inserirFilho(filho->filhos[i]);
+ filho->numeroChaves = ORDEM - 1;
+ int pos = pai->insereEmOrdem(filho->chaves[mediana]);
+ filho->chaves[mediana] = 0;
+
+ pai->inserirFilho(filho, pos++);
+ pai->inserirFilho(irmao, pos);*/
+
+
+
+
+
+

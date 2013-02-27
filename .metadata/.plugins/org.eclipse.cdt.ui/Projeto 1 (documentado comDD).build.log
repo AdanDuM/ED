@@ -1,0 +1,10 @@
+19:39:33 **** Incremental Build of configuration Debug for project Projeto 1 (documentado comDD) ****
+make all 
+Building target: Projeto 1 
+Invoking: Cross G++ Linker
+g++  -o "Projeto 1 (documentado comDD)"  ./src/Caixa.o ./src/CaixaEspecial.o ./src/Cliente.o ./src/ElementoDaListaCircular.o ./src/ElementoDeFila.o ./src/ListaCircular.o ./src/Main.o ./src/Supermercado.o   
+Finished building target: Projeto 1 
+ 
+
+19:39:33 Build Finished (took 114ms)
+

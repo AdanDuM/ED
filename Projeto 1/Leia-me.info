@@ -1,0 +1,10 @@
+#################################################
+#	SIMULADOR DE SUPERMERCADO			#
+# AUTORES:	WILLIAM KRAEMER 				# 		#		TIAGO FONTANA				#
+#								#
+#								#
+#################################################
+
+Existem duas pastas no arquivo aonde se encontra o executavel, um com nome de "resultados" no qual é escrito o arquivo com o resultado da execução,e outro com nome de "recursos" onde se encontra um arquivo de nome "Exemplo_Configuracao", que é apenas um exemplo de entrada usada pelo programa, neste também se encontram maiores informações sobre os dados que devem ser fornecidos como parâmetro para a execução deste programa. 
+
+OBS: Este programa usa Gnuplot para o seu funcionamento.

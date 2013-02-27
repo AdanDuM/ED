@@ -1,0 +1,174 @@
+\hypertarget{classOrdenacao_1_1HeapSort}{
+\section{Ordenacao::HeapSort Class Reference}
+\label{classOrdenacao_1_1HeapSort}\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+}
+
+
+{\ttfamily \#include $<$HeapSort.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOrdenacao_1_1HeapSort_ad5ce11165f8658234e52c0caa9bbe74d}{HeapSort} ()
+\item 
+virtual \hyperlink{classOrdenacao_1_1HeapSort_a2437a7ff240c2053a6274c94532150d7}{$\sim$HeapSort} ()
+\item 
+void \hyperlink{classOrdenacao_1_1HeapSort_aa2d7e90b9d9d85bc910768be73c82fef}{ordenar} (int $\ast$numeros, int tamanho)
+\item 
+void \hyperlink{classOrdenacao_1_1HeapSort_adea736e2cae0490f05426b9d953ab6ad}{montarHeap} (int $\ast$numeros, int tamanho)
+\item 
+void \hyperlink{classOrdenacao_1_1HeapSort_ac4ad66bc64cb09d6e4e13225331bce98}{ajustarHeap} (int $\ast$numeros, int index, int tamanho)
+\item 
+void \hyperlink{classOrdenacao_1_1HeapSort_a713072ec96f203059a09c70f4fba86ba}{swapArray} (int $\ast$numeros, int a, int b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um objeto que faz ordenação de um array com o metodo \hyperlink{classOrdenacao_1_1HeapSort}{HeapSort}.
+
+O algoritmo heapsort é um algoritmo de ordenação generalista, e faz parte da família de algoritmos de ordenação por seleção. O heapsort utiliza uma estrutura de dados chamada heap, para ordenar os elementos a medida que os insere na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada, lembrando-\/se sempre de manter a propriedade de max-\/heap. A heap pode ser representada como uma árvore (uma árvore binária com propriedades especiais) ou como um vetor. Para uma ordenação crescente, deve ser construído uma heap mínima (o menor elemento fica na raiz). Para uma ordenação decrescente, deve ser construído uma heap máxima (o maior elemento fica na raiz).
+
+REF: \href{http://pt.wikipedia.org/wiki/Heapsort}{\tt http://pt.wikipedia.org/wiki/Heapsort} 
+
+Definition at line 30 of file HeapSort.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOrdenacao_1_1HeapSort_ad5ce11165f8658234e52c0caa9bbe74d}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!HeapSort@{HeapSort}}
+\index{HeapSort@{HeapSort}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{HeapSort}]{\setlength{\rightskip}{0pt plus 5cm}Ordenacao::HeapSort::HeapSort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classOrdenacao_1_1HeapSort_ad5ce11165f8658234e52c0caa9bbe74d}
+Construtor da classe \hyperlink{classOrdenacao_1_1HeapSort}{HeapSort} 
+
+Definition at line 17 of file HeapSort.cpp.
+
+\hypertarget{classOrdenacao_1_1HeapSort_a2437a7ff240c2053a6274c94532150d7}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!$\sim$HeapSort@{$\sim$HeapSort}}
+\index{$\sim$HeapSort@{$\sim$HeapSort}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{$\sim$HeapSort}]{\setlength{\rightskip}{0pt plus 5cm}Ordenacao::HeapSort::$\sim$HeapSort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classOrdenacao_1_1HeapSort_a2437a7ff240c2053a6274c94532150d7}
+Destrutor da classe \hyperlink{classOrdenacao_1_1HeapSort}{HeapSort} 
+
+Definition at line 24 of file HeapSort.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOrdenacao_1_1HeapSort_ac4ad66bc64cb09d6e4e13225331bce98}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!ajustarHeap@{ajustarHeap}}
+\index{ajustarHeap@{ajustarHeap}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{ajustarHeap}]{\setlength{\rightskip}{0pt plus 5cm}void Ordenacao::HeapSort::ajustarHeap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{numeros, }
+\item[{int}]{i, }
+\item[{int}]{tamanho}
+\end{DoxyParamCaption}
+)}}
+\label{classOrdenacao_1_1HeapSort_ac4ad66bc64cb09d6e4e13225331bce98}
+Método que reajusta uma heap que foi desarrumada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$numeros} & = ponteiro para um array de int no qual ira ser montada a Heap. \\
+\hline
+{\em i} & = index do elemento a ser usado como nodo pai, para ajustar a heap. \\
+\hline
+{\em tamanho} & = inteiro contendo a quantidade de elementos do array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file HeapSort.cpp.
+
+\hypertarget{classOrdenacao_1_1HeapSort_adea736e2cae0490f05426b9d953ab6ad}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!montarHeap@{montarHeap}}
+\index{montarHeap@{montarHeap}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{montarHeap}]{\setlength{\rightskip}{0pt plus 5cm}void Ordenacao::HeapSort::montarHeap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{numeros, }
+\item[{int}]{tamanho}
+\end{DoxyParamCaption}
+)}}
+\label{classOrdenacao_1_1HeapSort_adea736e2cae0490f05426b9d953ab6ad}
+Método que monta uma Heap no array dado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$numeros} & = ponteiro para um array de int no qual ira ser montada a Heap. \\
+\hline
+{\em tamanho} & = inteiro contendo a quantidade de elementos do array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file HeapSort.cpp.
+
+\hypertarget{classOrdenacao_1_1HeapSort_aa2d7e90b9d9d85bc910768be73c82fef}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!ordenar@{ordenar}}
+\index{ordenar@{ordenar}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{ordenar}]{\setlength{\rightskip}{0pt plus 5cm}void Ordenacao::HeapSort::ordenar (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{numeros, }
+\item[{int}]{tamanho}
+\end{DoxyParamCaption}
+)}}
+\label{classOrdenacao_1_1HeapSort_aa2d7e90b9d9d85bc910768be73c82fef}
+Método no qual esta implementado o algoritmo do \hyperlink{classOrdenacao_1_1HeapSort}{HeapSort}, se encarrega de fazer a ordenação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$numeros} & = ponteiro para um array de int no qual ira ser montada a Heap. \\
+\hline
+{\em tamanho} & = inteiro contendo a quantidade de elementos do array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file HeapSort.cpp.
+
+
+
+Referenced by main().
+
+\hypertarget{classOrdenacao_1_1HeapSort_a713072ec96f203059a09c70f4fba86ba}{
+\index{Ordenacao::HeapSort@{Ordenacao::HeapSort}!swapArray@{swapArray}}
+\index{swapArray@{swapArray}!Ordenacao::HeapSort@{Ordenacao::HeapSort}}
+\subsubsection[{swapArray}]{\setlength{\rightskip}{0pt plus 5cm}void Ordenacao::HeapSort::swapArray (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{numeros, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{classOrdenacao_1_1HeapSort_a713072ec96f203059a09c70f4fba86ba}
+Método que faz o swap(troca) entre duas posições de um array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$numeros} & = ponteiro para um array de int no qual ira ser efetuado o swap. \\
+\hline
+{\em a} & = inteiro contendo uma das posições a ser trocada. \\
+\hline
+{\em b} & = inteiro contendo uma das posições a ser trocada. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file HeapSort.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{HeapSort_8h}{HeapSort.h}\item 
+src/\hyperlink{HeapSort_8cpp}{HeapSort.cpp}\end{DoxyCompactItemize}

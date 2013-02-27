@@ -1,0 +1,7 @@
+01:04:20 **** Clean-only build of configuration Debug for project ArvoreBT ****
+make clean 
+rm -rf  ./src/Info.o ./src/Main.o ./src/Nodo.o  ./src/Info.d ./src/Main.d ./src/Nodo.d  ArvoreBT
+ 
+
+01:04:20 Build Finished (took 216ms)
+

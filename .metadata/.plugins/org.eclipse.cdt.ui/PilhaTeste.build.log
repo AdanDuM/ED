@@ -1,0 +1,6 @@
+22:20:01 **** Incremental Build of configuration Build (GNU) for project PilhaTeste ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+22:20:01 Build Finished (took 64ms)
+

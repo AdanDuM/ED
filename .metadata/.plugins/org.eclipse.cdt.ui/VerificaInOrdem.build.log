@@ -1,0 +1,6 @@
+05:08:11 **** Incremental Build of configuration Build (GNU) for project VerificaInOrdem ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+05:08:11 Build Finished (took 64ms)
+

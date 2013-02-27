@@ -1,0 +1,10 @@
+21:28:37 **** Incremental Build of configuration Debug for project Trab. 8 - Arv. Balanceada(felipe) ****
+make all 
+Building target: Trab. 8 - Arv. Balanceada
+Invoking: Cross G++ Linker
+g++  -o "Trab. 8 - Arv. Balanceada(felipe)"  ./Cabecalho.o ./Elemento.o ./Main.o   
+Finished building target: Trab. 8 - Arv. Balanceada
+ 
+
+21:28:37 Build Finished (took 119ms)
+

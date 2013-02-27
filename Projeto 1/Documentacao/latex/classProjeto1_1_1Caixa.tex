@@ -1,0 +1,456 @@
+\hypertarget{classProjeto1_1_1Caixa}{
+\section{Projeto1::Caixa Class Reference}
+\label{classProjeto1_1_1Caixa}\index{Projeto1::Caixa@{Projeto1::Caixa}}
+}
+
+
+{\ttfamily \#include $<$Caixa.h$>$}
+
+Inheritance diagram for Projeto1::Caixa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProjeto1_1_1Caixa}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1Caixa_ac54adc569decc044934b973b4066f82e}{Caixa} (char $\ast$nome, int \hyperlink{classProjeto1_1_1Caixa_aeb2c7dca9680e644f88f3bb9eb606c2a}{eficiencia}, int \hyperlink{classProjeto1_1_1Caixa_ad9f8c9b65400bd1db9004dbb3c9f18ea}{salario})
+\item 
+\hyperlink{classProjeto1_1_1Caixa_a3186951816b7bba0b473a97d1fc44565}{Caixa} ()
+\item 
+virtual \hyperlink{classProjeto1_1_1Caixa_a5860cd7dc1a6fb064f025b8cd24cc872}{$\sim$Caixa} ()
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_a9501a2f8df6c4717db844327ac8c3a82}{enfileirar} (\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$dado)
+\item 
+\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$ \hyperlink{classProjeto1_1_1Caixa_a60a829984934de75e264bfebbebb56fb}{desenfileirar} ()
+\item 
+void \hyperlink{classProjeto1_1_1Caixa_a4363134abfee713c0d02f47510b4e93f}{limpar} ()
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_a0492c45bba7b53805bfe322ec1e8b993}{receberCliente} (\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$cliente)
+\item 
+virtual int \hyperlink{classProjeto1_1_1Caixa_a70c900f948864a28e2661dab17b10f9f}{fornecaLucro} ()
+\item 
+long int \hyperlink{classProjeto1_1_1Caixa_af082f5059bce22f7ed3d72de9e6b0fad}{atenderCliente} (int horaAtual)
+\item 
+void \hyperlink{classProjeto1_1_1Caixa_ae4c5c43dfcbae9198ae70624505f74b5}{mostrar} ()
+\item 
+void \hyperlink{classProjeto1_1_1Caixa_af4a87b003b6be708d883908573b0f88a}{apresentarRelatorio} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classProjeto1_1_1Caixa_a3396ba1f8fd63194ff225ffaf0d5268c}{nomeCaixa}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_aeb2c7dca9680e644f88f3bb9eb606c2a}{eficiencia}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_ad9f8c9b65400bd1db9004dbb3c9f18ea}{salario}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_ac836b24da5b62bd7d9382ada7d0222a4}{clientesAtendidos}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_a2a7071befa8bd345aae8bc42b9d08e24}{tempoMedio}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_aab5d05e900f913ed7d705bcb2c4e899d}{faturamentoTotal}
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classProjeto1_1_1Caixa_a81f31c6847218308e3285c385675c3d9}{primeiro}
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classProjeto1_1_1Caixa_adf2463f6ed9828bed7c3def83ab1fd95}{ultimo}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_a6a968db0d50c39f1429591190ad34791}{tamanhoFila}
+\item 
+int \hyperlink{classProjeto1_1_1Caixa_ab02cf6a92e30a62022a04335742f2767}{totalProdutos}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classProjeto1_1_1Caixa_a099014e9d3fee7c7286ca347bc7955f6}{vazia} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um caixa de um supermercado. 
+
+Definition at line 24 of file Caixa.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjeto1_1_1Caixa_ac54adc569decc044934b973b4066f82e}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!Caixa@{Caixa}}
+\index{Caixa@{Caixa}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{Caixa}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Caixa::Caixa (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome, }
+\item[{int}]{eficienc, }
+\item[{int}]{salari}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_ac54adc569decc044934b973b4066f82e}
+Construtor que gera um caixa de supermercado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & : nome do operador do caixa. \\
+\hline
+{\em eficienc} & : eficiencia do operador do caixa. \\
+\hline
+{\em salari} & : salario do operador do caixa. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Caixa.cpp.
+
+\hypertarget{classProjeto1_1_1Caixa_a3186951816b7bba0b473a97d1fc44565}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!Caixa@{Caixa}}
+\index{Caixa@{Caixa}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{Caixa}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Caixa::Caixa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_a3186951816b7bba0b473a97d1fc44565}
+
+
+Definition at line 33 of file Caixa.cpp.
+
+\hypertarget{classProjeto1_1_1Caixa_a5860cd7dc1a6fb064f025b8cd24cc872}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!$\sim$Caixa@{$\sim$Caixa}}
+\index{$\sim$Caixa@{$\sim$Caixa}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{$\sim$Caixa}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Caixa::$\sim$Caixa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1Caixa_a5860cd7dc1a6fb064f025b8cd24cc872}
+Destrutor que exclui um objeto da classe caixa. 
+
+Definition at line 49 of file Caixa.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classProjeto1_1_1Caixa_af4a87b003b6be708d883908573b0f88a}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!apresentarRelatorio@{apresentarRelatorio}}
+\index{apresentarRelatorio@{apresentarRelatorio}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{apresentarRelatorio}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Caixa::apresentarRelatorio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_af4a87b003b6be708d883908573b0f88a}
+Método que gera o relatório final da execução. 
+
+Definition at line 212 of file Caixa.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados().
+
+\hypertarget{classProjeto1_1_1Caixa_af082f5059bce22f7ed3d72de9e6b0fad}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!atenderCliente@{atenderCliente}}
+\index{atenderCliente@{atenderCliente}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{atenderCliente}]{\setlength{\rightskip}{0pt plus 5cm}long int Projeto1::Caixa::atenderCliente (
+\begin{DoxyParamCaption}
+\item[{int}]{horaAtual}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_af082f5059bce22f7ed3d72de9e6b0fad}
+Método que verificar se o proximo cliente da fila deve ser atendimento.
+
+
+\begin{DoxyParams}{Parameters}
+{\em horaAtual} & : instante em que se encontra o programa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classProjeto1_1_1Cliente}{Cliente} : cliente que foi atendido. 
+\end{DoxyReturn}
+
+
+Definition at line 193 of file Caixa.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::atenderClientes().
+
+\hypertarget{classProjeto1_1_1Caixa_a60a829984934de75e264bfebbebb56fb}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!desenfileirar@{desenfileirar}}
+\index{desenfileirar@{desenfileirar}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{desenfileirar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cliente} $\ast$ Projeto1::Caixa::desenfileirar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_a60a829984934de75e264bfebbebb56fb}
+Método que remove um elemento da Fila. Primeiramente testa se a Fila possui elementos. Caso possua ele remove o primeiro elemento, ou seja o primeiro que foi inserido.
+
+\begin{DoxyReturn}{Returns}
+0(NULL) = caso a Fila não possua elementos. 
+
+volta = ponteiro para um objeto da classe cliente. 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Caixa.cpp.
+
+
+
+References Projeto1::ElementoDeFila::cliente, FILA\_\-VAZIA, and Projeto1::ElementoDeFila::proximo.
+
+\hypertarget{classProjeto1_1_1Caixa_a9501a2f8df6c4717db844327ac8c3a82}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!enfileirar@{enfileirar}}
+\index{enfileirar@{enfileirar}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{enfileirar}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::Caixa::enfileirar (
+\begin{DoxyParamCaption}
+\item[{{\bf Cliente} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_a9501a2f8df6c4717db844327ac8c3a82}
+Método que adiciona um elemento da fila.
+
+Primeiramente teste se ainda é possivel adicionar um elemento à fila. Caso isso não seja verdadeiro ele retorna uma constante FILA\_\-CHEIA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dado} & = ponteiro para um objeto da classe \hyperlink{classProjeto1_1_1Cliente}{Cliente}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FILA\_\-CHEIA = constante que representa a falta de espaço na Fila. 
+
+tamanho = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Caixa.cpp.
+
+
+
+References FILA\_\-CHEIA, and Projeto1::ElementoDeFila::proximo.
+
+\hypertarget{classProjeto1_1_1Caixa_a70c900f948864a28e2661dab17b10f9f}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!fornecaLucro@{fornecaLucro}}
+\index{fornecaLucro@{fornecaLucro}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{fornecaLucro}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::Caixa::fornecaLucro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1Caixa_a70c900f948864a28e2661dab17b10f9f}
+Método que fornece o lucro gerado pelo caixa corrente.
+
+\begin{DoxyReturn}{Returns}
+lucro : ineiro. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classProjeto1_1_1CaixaEspecial_a8b903f57784cc2f5025108db30939232}{Projeto1::CaixaEspecial}.
+
+
+
+Definition at line 175 of file Caixa.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados().
+
+\hypertarget{classProjeto1_1_1Caixa_a4363134abfee713c0d02f47510b4e93f}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!limpar@{limpar}}
+\index{limpar@{limpar}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{limpar}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Caixa::limpar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_a4363134abfee713c0d02f47510b4e93f}
+Método que exclui todos os elementos da fila e suas respectivas informações, representado pela classe \hyperlink{classProjeto1_1_1Cliente}{Cliente}. 
+
+Definition at line 122 of file Caixa.cpp.
+
+
+
+References Projeto1::ElementoDeFila::cliente, FILA\_\-VAZIA, and Projeto1::ElementoDeFila::proximo.
+
+\hypertarget{classProjeto1_1_1Caixa_ae4c5c43dfcbae9198ae70624505f74b5}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{mostrar}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Caixa::mostrar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_ae4c5c43dfcbae9198ae70624505f74b5}
+Método que imprime as informações do caixa. 
+
+Definition at line 82 of file Caixa.cpp.
+
+\hypertarget{classProjeto1_1_1Caixa_a0492c45bba7b53805bfe322ec1e8b993}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!receberCliente@{receberCliente}}
+\index{receberCliente@{receberCliente}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{receberCliente}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::Caixa::receberCliente (
+\begin{DoxyParamCaption}
+\item[{{\bf Cliente} $\ast$}]{cliente}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Caixa_a0492c45bba7b53805bfe322ec1e8b993}
+Método que calcula o tempo de saida de um cliente de acordo com seus parâmetros e com a eficoência do caixa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & : cliente do supermercado. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file Caixa.cpp.
+
+
+
+References Projeto1::Cliente::chegada, Projeto1::Cliente::cheque, Projeto1::Cliente::saida, and Projeto1::Cliente::totalCompras.
+
+
+
+Referenced by Projeto1::Supermercado::posicionarCliente().
+
+\hypertarget{classProjeto1_1_1Caixa_a099014e9d3fee7c7286ca347bc7955f6}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!vazia@{vazia}}
+\index{vazia@{vazia}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{vazia}]{\setlength{\rightskip}{0pt plus 5cm}bool Projeto1::Caixa::vazia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classProjeto1_1_1Caixa_a099014e9d3fee7c7286ca347bc7955f6}
+Metodo que testa se a fila possui elementos.
+
+\begin{DoxyReturn}{Returns}
+true = caso a Fila esteja vazia. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Caixa.cpp.
+
+
+
+References FILA\_\-VAZIA.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classProjeto1_1_1Caixa_ac836b24da5b62bd7d9382ada7d0222a4}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!clientesAtendidos@{clientesAtendidos}}
+\index{clientesAtendidos@{clientesAtendidos}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{clientesAtendidos}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::clientesAtendidos}}}
+\label{classProjeto1_1_1Caixa_ac836b24da5b62bd7d9382ada7d0222a4}
+numero de clientes atendidos 
+
+Definition at line 37 of file Caixa.h.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados().
+
+\hypertarget{classProjeto1_1_1Caixa_aeb2c7dca9680e644f88f3bb9eb606c2a}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!eficiencia@{eficiencia}}
+\index{eficiencia@{eficiencia}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{eficiencia}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::eficiencia}}}
+\label{classProjeto1_1_1Caixa_aeb2c7dca9680e644f88f3bb9eb606c2a}
+eficiencia do caixa 
+
+Definition at line 33 of file Caixa.h.
+
+\hypertarget{classProjeto1_1_1Caixa_aab5d05e900f913ed7d705bcb2c4e899d}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!faturamentoTotal@{faturamentoTotal}}
+\index{faturamentoTotal@{faturamentoTotal}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{faturamentoTotal}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::faturamentoTotal}}}
+\label{classProjeto1_1_1Caixa_aab5d05e900f913ed7d705bcb2c4e899d}
+faturamento total 
+
+Definition at line 41 of file Caixa.h.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados(), and Projeto1::CaixaEspecial::fornecaLucro().
+
+\hypertarget{classProjeto1_1_1Caixa_a3396ba1f8fd63194ff225ffaf0d5268c}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!nomeCaixa@{nomeCaixa}}
+\index{nomeCaixa@{nomeCaixa}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{nomeCaixa}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Projeto1::Caixa::nomeCaixa}}}
+\label{classProjeto1_1_1Caixa_a3396ba1f8fd63194ff225ffaf0d5268c}
+identificador do caixa 
+
+Definition at line 31 of file Caixa.h.
+
+\hypertarget{classProjeto1_1_1Caixa_a81f31c6847218308e3285c385675c3d9}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!primeiro@{primeiro}}
+\index{primeiro@{primeiro}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{primeiro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila}$\ast$ {\bf Projeto1::Caixa::primeiro}}}
+\label{classProjeto1_1_1Caixa_a81f31c6847218308e3285c385675c3d9}
+FilaDeClientes 
+
+Definition at line 45 of file Caixa.h.
+
+\hypertarget{classProjeto1_1_1Caixa_ad9f8c9b65400bd1db9004dbb3c9f18ea}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!salario@{salario}}
+\index{salario@{salario}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{salario}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::salario}}}
+\label{classProjeto1_1_1Caixa_ad9f8c9b65400bd1db9004dbb3c9f18ea}
+salario do caixa 
+
+Definition at line 35 of file Caixa.h.
+
+
+
+Referenced by Projeto1::CaixaEspecial::fornecaLucro().
+
+\hypertarget{classProjeto1_1_1Caixa_a6a968db0d50c39f1429591190ad34791}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!tamanhoFila@{tamanhoFila}}
+\index{tamanhoFila@{tamanhoFila}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{tamanhoFila}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::tamanhoFila}}}
+\label{classProjeto1_1_1Caixa_a6a968db0d50c39f1429591190ad34791}
+tamanho fila de clientes 
+
+Definition at line 49 of file Caixa.h.
+
+
+
+Referenced by Projeto1::Supermercado::chamarCaixaEspecial(), and Projeto1::Supermercado::posicionarCliente().
+
+\hypertarget{classProjeto1_1_1Caixa_a2a7071befa8bd345aae8bc42b9d08e24}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!tempoMedio@{tempoMedio}}
+\index{tempoMedio@{tempoMedio}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{tempoMedio}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::tempoMedio}}}
+\label{classProjeto1_1_1Caixa_a2a7071befa8bd345aae8bc42b9d08e24}
+tempo medio de espera 
+
+Definition at line 39 of file Caixa.h.
+
+\hypertarget{classProjeto1_1_1Caixa_ab02cf6a92e30a62022a04335742f2767}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!totalProdutos@{totalProdutos}}
+\index{totalProdutos@{totalProdutos}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{totalProdutos}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Caixa::totalProdutos}}}
+\label{classProjeto1_1_1Caixa_ab02cf6a92e30a62022a04335742f2767}
+soma de todas as mercadorias dos clientes que estão na fila. 
+
+Definition at line 51 of file Caixa.h.
+
+
+
+Referenced by Projeto1::Supermercado::posicionarCliente().
+
+\hypertarget{classProjeto1_1_1Caixa_adf2463f6ed9828bed7c3def83ab1fd95}{
+\index{Projeto1::Caixa@{Projeto1::Caixa}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!Projeto1::Caixa@{Projeto1::Caixa}}
+\subsubsection[{ultimo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila}$\ast$ {\bf Projeto1::Caixa::ultimo}}}
+\label{classProjeto1_1_1Caixa_adf2463f6ed9828bed7c3def83ab1fd95}
+FilaDeClientes 
+
+Definition at line 47 of file Caixa.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Caixa_8h}{Caixa.h}\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Caixa_8cpp}{Caixa.cpp}\end{DoxyCompactItemize}

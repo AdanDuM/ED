@@ -1,0 +1,6 @@
+12:37:39 **** Build of configuration Default for project Projeto1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+12:37:39 Build Finished (took 58ms)
+

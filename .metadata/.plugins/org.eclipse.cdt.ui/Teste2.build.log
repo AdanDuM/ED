@@ -1,0 +1,6 @@
+21:42:57 **** Incremental Build of configuration Default for project Teste2 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+21:42:57 Build Finished (took 58ms)
+

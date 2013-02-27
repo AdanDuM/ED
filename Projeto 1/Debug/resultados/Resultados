@@ -1,0 +1,45 @@
+ Nome Supermercado: NaoCompre Costeira
+ Tempo total de simulação: 10800 segundos
+ Faturamento bruto: 182516
+ Faturamento liquido: 180716
+ Número de desistências: 0 clientes
+ Prejuizo gerado pelas desistência: 0
+ Tempo médio de permanência de um cliente no supermercado: 122 segundos
+ Faturamento médio dos caixas: 45179
+
+ Nome caixa: Joao_DeMora
+ Eficiência: 3
+ Salário: 600
+ Tempo médio de permanência de um cliente na fila: 212 segundos.
+ Número de clientes atendidos: 37
+ Faturamento real: 79167
+ Faturamento medio por clinte: 2139
+ Lucro total do caixa: 78567
+
+ Nome caixa: Zeca_Mole
+ Eficiência: 3
+ Salário: 500
+ Tempo médio de permanência de um cliente na fila: 182 segundos.
+ Número de clientes atendidos: 34
+ Faturamento real: 65084
+ Faturamento medio por clinte: 1914
+ Lucro total do caixa: 64584
+
+ Nome caixa: Juliana_Digito
+ Eficiência: 3
+ Salário: 400
+ Tempo médio de permanência de um cliente na fila: 199 segundos.
+ Número de clientes atendidos: 13
+ Faturamento real: 29187
+ Faturamento medio por clinte: 2245
+ Lucro total do caixa: 28787
+
+ Nome caixa: Maria_Benta
+ Eficiência: 3
+ Salário: 300
+ Tempo médio de permanência de um cliente na fila: 217 segundos.
+ Número de clientes atendidos: 4
+ Faturamento real: 9078
+ Faturamento medio por clinte: 2269
+ Lucro total do caixa: 8778
+

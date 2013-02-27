@@ -1,0 +1,310 @@
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi}{
+\section{PilhaEncadeada::TorresDeHanoi Class Reference}
+\label{classPilhaEncadeada_1_1TorresDeHanoi}\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+}
+
+
+{\ttfamily \#include $<$TorresDeHanoi.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a43363acfbc0954d34b1046b62b89f7a2}{TorresDeHanoi} ()
+\item 
+\hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a2c5df6b93bb13d79c257930a4ba8fb09}{TorresDeHanoi} (int total)
+\item 
+virtual \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_ad8bc0337e70a7c9b98af485fbcc93234}{$\sim$TorresDeHanoi} ()
+\item 
+void \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a26d82e0d98a947737b189475e5be9743}{iniciarJogadas} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_aa73dfcd464d063d92306299bda99282e}{resolverPar} ()
+\item 
+void \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_ac02df48481855b7cce4ce5917d63fdc0}{resolverImpar} ()
+\item 
+void \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_af538b5b7d828d48bf44d2c26e77ba255}{moverMenor} ()
+\item 
+void \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a0d1ae229f02212eff7880042b9d50ad0}{fazerJogadaSeguinte} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a18f731e4da165a4550bf33e9607f29b3}{fonte}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_aa22379df705956747d5036c4e6a6c209}{meio}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a2f7d0ab39889d805c03773b414261277}{destino}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$ \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a119881c601dca2a34731b05254355b96}{menor}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a2cf03283a56bd5210894ca7aced61786}{totalDiscos}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a28255ab87785e3120e22c07ffb401f79}{posMenor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 50 of file TorresDeHanoi.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a43363acfbc0954d34b1046b62b89f7a2}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!TorresDeHanoi@{TorresDeHanoi}}
+\index{TorresDeHanoi@{TorresDeHanoi}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{TorresDeHanoi}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::TorresDeHanoi::TorresDeHanoi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a43363acfbc0954d34b1046b62b89f7a2}
+Construtor que configura um objeto da classe \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi}{TorresDeHanoi} inicializando totalDiscos em 0. 
+
+Definition at line 15 of file TorresDeHanoi.cpp.
+
+
+
+References totalDiscos.
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a2c5df6b93bb13d79c257930a4ba8fb09}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!TorresDeHanoi@{TorresDeHanoi}}
+\index{TorresDeHanoi@{TorresDeHanoi}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{TorresDeHanoi}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::TorresDeHanoi::TorresDeHanoi (
+\begin{DoxyParamCaption}
+\item[{int}]{total}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a2c5df6b93bb13d79c257930a4ba8fb09}
+Construtor que configura um objeto da classe \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi}{TorresDeHanoi}, inicializando posMenor em 1, e atribuindo as ID às suas respectivas pilhas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & = valor inteiro que contem a quantidade de discos que devem ser criados na pilha fonte. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file TorresDeHanoi.cpp.
+
+
+
+References destino, PilhaEncadeada::Pilha::empilha(), fonte, PilhaEncadeada::Pilha::id, ID\_\-DESTINO, ID\_\-FONTE, ID\_\-MEIO, meio, posMenor, and totalDiscos.
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_ad8bc0337e70a7c9b98af485fbcc93234}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!$\sim$TorresDeHanoi@{$\sim$TorresDeHanoi}}
+\index{$\sim$TorresDeHanoi@{$\sim$TorresDeHanoi}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{$\sim$TorresDeHanoi}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::TorresDeHanoi::$\sim$TorresDeHanoi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_ad8bc0337e70a7c9b98af485fbcc93234}
+Destrutor que exclui um objeto da classe \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi}{TorresDeHanoi} 
+
+Definition at line 41 of file TorresDeHanoi.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a0d1ae229f02212eff7880042b9d50ad0}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!fazerJogadaSeguinte@{fazerJogadaSeguinte}}
+\index{fazerJogadaSeguinte@{fazerJogadaSeguinte}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{fazerJogadaSeguinte}]{\setlength{\rightskip}{0pt plus 5cm}void PilhaEncadeada::TorresDeHanoi::fazerJogadaSeguinte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a0d1ae229f02212eff7880042b9d50ad0}
+Método que faz a desição de qual deve ser o proximo movimento do \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} no caso em que não é a vez do menor e que ja foi efetuada uma jogada com o menor.
+
+Para isto, verifica em qual pino se encontra o \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} menor e verifica qual é o maior diametroTopo dos outros dois pinos. Uma vez decidido, desempilha o \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} do pino com menor diametroTopo e o coloca no pino com maior diametroTopo. 
+
+Definition at line 52 of file TorresDeHanoi.cpp.
+
+
+
+References PilhaEncadeada::Pilha::desempilha(), destino, PilhaEncadeada::Pilha::diametroTopo, PilhaEncadeada::Pilha::empilha(), fonte, meio, posMenor, PilhaEncadeada::Pilha::tamanho, and totalDiscos.
+
+
+
+Referenced by resolverImpar(), and resolverPar().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a26d82e0d98a947737b189475e5be9743}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!iniciarJogadas@{iniciarJogadas}}
+\index{iniciarJogadas@{iniciarJogadas}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{iniciarJogadas}]{\setlength{\rightskip}{0pt plus 5cm}void PilhaEncadeada::TorresDeHanoi::iniciarJogadas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a26d82e0d98a947737b189475e5be9743}
+Método que verifica se o numero total de Discos que esta contido na variável totalDiscos, é par ou não.
+
+Para logo fazer a decisão de chamar o metodo \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_aa73dfcd464d063d92306299bda99282e}{resolverPar()}, caso seja par. Ou \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_ac02df48481855b7cce4ce5917d63fdc0}{resolverImpar()}, caso seja impar. 
+
+Definition at line 186 of file TorresDeHanoi.cpp.
+
+
+
+References resolverImpar(), resolverPar(), and totalDiscos.
+
+
+
+Referenced by main().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_af538b5b7d828d48bf44d2c26e77ba255}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!moverMenor@{moverMenor}}
+\index{moverMenor@{moverMenor}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{moverMenor}]{\setlength{\rightskip}{0pt plus 5cm}void PilhaEncadeada::TorresDeHanoi::moverMenor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_af538b5b7d828d48bf44d2c26e77ba255}
+Método que faz a desição de qual deve ser o movimento do \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} menor, no caso em que não é mais a primeira jogada.
+
+Para isto, verifica em qual pino se encontra o \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} menor e qual é sua origem. 
+
+Definition at line 103 of file TorresDeHanoi.cpp.
+
+
+
+References PilhaEncadeada::Pilha::contem(), PilhaEncadeada::Pilha::desempilha(), destino, PilhaEncadeada::Pilha::empilha(), fonte, ID\_\-DESTINO, ID\_\-FONTE, ID\_\-MEIO, meio, menor, PilhaEncadeada::Disco::origem, and posMenor.
+
+
+
+Referenced by resolverImpar(), and resolverPar().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_ac02df48481855b7cce4ce5917d63fdc0}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!resolverImpar@{resolverImpar}}
+\index{resolverImpar@{resolverImpar}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{resolverImpar}]{\setlength{\rightskip}{0pt plus 5cm}void PilhaEncadeada::TorresDeHanoi::resolverImpar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_ac02df48481855b7cce4ce5917d63fdc0}
+Método que faz a resolução do jogo no caso em que o numero total de Discos em jogo é impar. Faz um movimento do \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} menor para o pino destino na primeira jogada, depois chama o metodo \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a0d1ae229f02212eff7880042b9d50ad0}{fazerJogadaSeguinte()} para mover outra peça que não seja a menor, e depois faz mais um movimento da menor, com o metodo \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_af538b5b7d828d48bf44d2c26e77ba255}{moverMenor()}. Isto se repete até o fim do jogo, quando todos os Discos estão no pino destino 
+
+Definition at line 168 of file TorresDeHanoi.cpp.
+
+
+
+References PilhaEncadeada::Pilha::desempilha(), destino, PilhaEncadeada::Pilha::empilha(), fazerJogadaSeguinte(), fonte, ID\_\-DESTINO, menor, moverMenor(), posMenor, PilhaEncadeada::Pilha::tamanho, and totalDiscos.
+
+
+
+Referenced by iniciarJogadas().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_aa73dfcd464d063d92306299bda99282e}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!resolverPar@{resolverPar}}
+\index{resolverPar@{resolverPar}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{resolverPar}]{\setlength{\rightskip}{0pt plus 5cm}void PilhaEncadeada::TorresDeHanoi::resolverPar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_aa73dfcd464d063d92306299bda99282e}
+Método que faz a resolução do jogo no caso em que o numero total de Discos em jogo é par. Faz um movimento do \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} menor para o pino do meio na primeira jogada, depois chama o metodo \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_a0d1ae229f02212eff7880042b9d50ad0}{fazerJogadaSeguinte()} para mover outra peça que não seja a menor, e depois faz mais um movimento da menor, com o metodo \hyperlink{classPilhaEncadeada_1_1TorresDeHanoi_af538b5b7d828d48bf44d2c26e77ba255}{moverMenor()}. Isto se repete até o fim do jogo, quando todos os Discos estão no pino destino 
+
+Definition at line 148 of file TorresDeHanoi.cpp.
+
+
+
+References PilhaEncadeada::Pilha::desempilha(), destino, PilhaEncadeada::Pilha::empilha(), fazerJogadaSeguinte(), fonte, ID\_\-MEIO, meio, menor, moverMenor(), posMenor, PilhaEncadeada::Pilha::tamanho, and totalDiscos.
+
+
+
+Referenced by iniciarJogadas().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a2f7d0ab39889d805c03773b414261277}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!destino@{destino}}
+\index{destino@{destino}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{destino}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pilha} {\bf PilhaEncadeada::TorresDeHanoi::destino}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a2f7d0ab39889d805c03773b414261277}
+
+
+Definition at line 59 of file TorresDeHanoi.h.
+
+
+
+Referenced by fazerJogadaSeguinte(), moverMenor(), resolverImpar(), resolverPar(), and TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a18f731e4da165a4550bf33e9607f29b3}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!fonte@{fonte}}
+\index{fonte@{fonte}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{fonte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pilha} {\bf PilhaEncadeada::TorresDeHanoi::fonte}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a18f731e4da165a4550bf33e9607f29b3}
+
+
+Definition at line 57 of file TorresDeHanoi.h.
+
+
+
+Referenced by fazerJogadaSeguinte(), moverMenor(), resolverImpar(), resolverPar(), and TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_aa22379df705956747d5036c4e6a6c209}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!meio@{meio}}
+\index{meio@{meio}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{meio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pilha} {\bf PilhaEncadeada::TorresDeHanoi::meio}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_aa22379df705956747d5036c4e6a6c209}
+
+
+Definition at line 58 of file TorresDeHanoi.h.
+
+
+
+Referenced by fazerJogadaSeguinte(), moverMenor(), resolverPar(), and TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a119881c601dca2a34731b05254355b96}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!menor@{menor}}
+\index{menor@{menor}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{menor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disco}$\ast$ {\bf PilhaEncadeada::TorresDeHanoi::menor}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a119881c601dca2a34731b05254355b96}
+
+
+Definition at line 60 of file TorresDeHanoi.h.
+
+
+
+Referenced by moverMenor(), resolverImpar(), and resolverPar().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a28255ab87785e3120e22c07ffb401f79}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!posMenor@{posMenor}}
+\index{posMenor@{posMenor}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{posMenor}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::TorresDeHanoi::posMenor}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a28255ab87785e3120e22c07ffb401f79}
+
+
+Definition at line 62 of file TorresDeHanoi.h.
+
+
+
+Referenced by fazerJogadaSeguinte(), moverMenor(), resolverImpar(), resolverPar(), and TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1TorresDeHanoi_a2cf03283a56bd5210894ca7aced61786}{
+\index{PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}!totalDiscos@{totalDiscos}}
+\index{totalDiscos@{totalDiscos}!PilhaEncadeada::TorresDeHanoi@{PilhaEncadeada::TorresDeHanoi}}
+\subsubsection[{totalDiscos}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::TorresDeHanoi::totalDiscos}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classPilhaEncadeada_1_1TorresDeHanoi_a2cf03283a56bd5210894ca7aced61786}
+
+
+Definition at line 61 of file TorresDeHanoi.h.
+
+
+
+Referenced by fazerJogadaSeguinte(), iniciarJogadas(), resolverImpar(), resolverPar(), and TorresDeHanoi().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{TorresDeHanoi_8h}{TorresDeHanoi.h}\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{TorresDeHanoi_8cpp}{TorresDeHanoi.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,259 @@
+\hypertarget{classProjeto1_1_1Cliente}{
+\section{Projeto1::Cliente Class Reference}
+\label{classProjeto1_1_1Cliente}\index{Projeto1::Cliente@{Projeto1::Cliente}}
+}
+
+
+{\ttfamily \#include $<$Cliente.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1Cliente_a6ae1c10cc466395103a86c7c8a264038}{Cliente} ()
+\item 
+\hyperlink{classProjeto1_1_1Cliente_a2753ad34ef32991f3ea25585d8a1fa8a}{Cliente} (int \hyperlink{classProjeto1_1_1Cliente_adc19105b9deaa9411028a32ba1eec9fc}{chegada})
+\item 
+virtual \hyperlink{classProjeto1_1_1Cliente_ac90c4ac14257d2714468bedc178a13ee}{$\sim$Cliente} ()
+\item 
+void \hyperlink{classProjeto1_1_1Cliente_af92320dc3f60493254a12d4295c842db}{gerarTotalDeCompras} ()
+\item 
+void \hyperlink{classProjeto1_1_1Cliente_a6507e848da3d68d859663be187094efc}{calcularValorDeCompras} ()
+\item 
+void \hyperlink{classProjeto1_1_1Cliente_a38c487a5b371ddef86d2b649b7f30872}{decidirCheque} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classProjeto1_1_1Cliente_ae6670b6e5ba64ee23f9798845df586a5}{totalCompras}
+\item 
+int \hyperlink{classProjeto1_1_1Cliente_a37b32637d513c756c817415f618d8d9d}{valorCompras}
+\item 
+int \hyperlink{classProjeto1_1_1Cliente_adc19105b9deaa9411028a32ba1eec9fc}{chegada}
+\item 
+int \hyperlink{classProjeto1_1_1Cliente_a868b7d7e3b824aed35511c433801824a}{saida}
+\item 
+bool \hyperlink{classProjeto1_1_1Cliente_ad54c6376c859c8cdb68887b3948e9841}{cheque}
+\item 
+\hyperlink{namespaceProjeto1_a4dade362b39c779d6411abf4ba19aeed}{TipoCliente} \hyperlink{classProjeto1_1_1Cliente_af37da5fe48856223d53932cf61d4b3f7}{tipo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Cliente.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjeto1_1_1Cliente_a6ae1c10cc466395103a86c7c8a264038}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{Cliente}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Cliente::Cliente (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Cliente_a6ae1c10cc466395103a86c7c8a264038}
+
+
+Definition at line 14 of file Cliente.cpp.
+
+
+
+References calcularValorDeCompras(), chegada, decidirCheque(), gerarTotalDeCompras(), saida, and valorCompras.
+
+\hypertarget{classProjeto1_1_1Cliente_a2753ad34ef32991f3ea25585d8a1fa8a}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{Cliente}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Cliente::Cliente (
+\begin{DoxyParamCaption}
+\item[{int}]{chegada}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Cliente_a2753ad34ef32991f3ea25585d8a1fa8a}
+
+
+Definition at line 23 of file Cliente.cpp.
+
+
+
+References calcularValorDeCompras(), chegada, decidirCheque(), gerarTotalDeCompras(), saida, and valorCompras.
+
+\hypertarget{classProjeto1_1_1Cliente_ac90c4ac14257d2714468bedc178a13ee}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!$\sim$Cliente@{$\sim$Cliente}}
+\index{$\sim$Cliente@{$\sim$Cliente}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{$\sim$Cliente}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Cliente::$\sim$Cliente (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1Cliente_ac90c4ac14257d2714468bedc178a13ee}
+
+
+Definition at line 33 of file Cliente.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classProjeto1_1_1Cliente_a6507e848da3d68d859663be187094efc}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!calcularValorDeCompras@{calcularValorDeCompras}}
+\index{calcularValorDeCompras@{calcularValorDeCompras}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{calcularValorDeCompras}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Cliente::calcularValorDeCompras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Cliente_a6507e848da3d68d859663be187094efc}
+Método que calcula o valor de cada compra do cliente.
+
+Para isso ele usa o metodo \char`\"{}rand()\char`\"{}, que gera um numero aleatório,e delimita o intervalo de geração entre as constantes: MAX\_\-VALOR e MIN\_\-VALOR. 
+
+Definition at line 56 of file Cliente.cpp.
+
+
+
+References MAX\_\-VALOR, MIN\_\-VALOR, totalCompras, and valorCompras.
+
+
+
+Referenced by Cliente().
+
+\hypertarget{classProjeto1_1_1Cliente_a38c487a5b371ddef86d2b649b7f30872}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!decidirCheque@{decidirCheque}}
+\index{decidirCheque@{decidirCheque}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{decidirCheque}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Cliente::decidirCheque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Cliente_a38c487a5b371ddef86d2b649b7f30872}
+Método que gera a forma de pagamento de um cliente.
+
+Para isso tem uma probabilidade de 20\% para pagamento em cheque e 80\% para dinheiro. 
+
+Definition at line 72 of file Cliente.cpp.
+
+
+
+References cheque, and PROB\_\-CHEQUE.
+
+
+
+Referenced by Cliente().
+
+\hypertarget{classProjeto1_1_1Cliente_af92320dc3f60493254a12d4295c842db}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!gerarTotalDeCompras@{gerarTotalDeCompras}}
+\index{gerarTotalDeCompras@{gerarTotalDeCompras}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{gerarTotalDeCompras}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Cliente::gerarTotalDeCompras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Cliente_af92320dc3f60493254a12d4295c842db}
+Método que fornece o lucro gerado pelo caixa durante a simulação.
+
+Para tal fornecimento ele subtrai seu sálario, que é dobrado pois ele está em hora extra, de seu faturamento total.
+
+\begin{DoxyReturn}{Returns}
+lucro gerado pelo caixa. 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Cliente.cpp.
+
+
+
+References MAX\_\-COMPRAS, MAX\_\-VALOR, MIN\_\-COMPRAS, MIN\_\-VALOR, and totalCompras.
+
+
+
+Referenced by Cliente().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classProjeto1_1_1Cliente_adc19105b9deaa9411028a32ba1eec9fc}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!chegada@{chegada}}
+\index{chegada@{chegada}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{chegada}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Cliente::chegada}}}
+\label{classProjeto1_1_1Cliente_adc19105b9deaa9411028a32ba1eec9fc}
+horario de chegada do cliente 
+
+Definition at line 30 of file Cliente.h.
+
+
+
+Referenced by Cliente(), and Projeto1::Caixa::receberCliente().
+
+\hypertarget{classProjeto1_1_1Cliente_ad54c6376c859c8cdb68887b3948e9841}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!cheque@{cheque}}
+\index{cheque@{cheque}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{cheque}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Projeto1::Cliente::cheque}}}
+\label{classProjeto1_1_1Cliente_ad54c6376c859c8cdb68887b3948e9841}
+True quando for pagamento em cheque 
+
+Definition at line 34 of file Cliente.h.
+
+
+
+Referenced by decidirCheque(), and Projeto1::Caixa::receberCliente().
+
+\hypertarget{classProjeto1_1_1Cliente_a868b7d7e3b824aed35511c433801824a}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!saida@{saida}}
+\index{saida@{saida}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{saida}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Cliente::saida}}}
+\label{classProjeto1_1_1Cliente_a868b7d7e3b824aed35511c433801824a}
+horario de saida do cliente 
+
+Definition at line 32 of file Cliente.h.
+
+
+
+Referenced by Cliente(), and Projeto1::Caixa::receberCliente().
+
+\hypertarget{classProjeto1_1_1Cliente_af37da5fe48856223d53932cf61d4b3f7}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!tipo@{tipo}}
+\index{tipo@{tipo}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{tipo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TipoCliente} {\bf Projeto1::Cliente::tipo}}}
+\label{classProjeto1_1_1Cliente_af37da5fe48856223d53932cf61d4b3f7}
+enum de tipo do cliente 
+
+Definition at line 36 of file Cliente.h.
+
+
+
+Referenced by Projeto1::Supermercado::gerarCliente(), and Projeto1::Supermercado::posicionarCliente().
+
+\hypertarget{classProjeto1_1_1Cliente_ae6670b6e5ba64ee23f9798845df586a5}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!totalCompras@{totalCompras}}
+\index{totalCompras@{totalCompras}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{totalCompras}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Cliente::totalCompras}}}
+\label{classProjeto1_1_1Cliente_ae6670b6e5ba64ee23f9798845df586a5}
+entre 2 e 100 
+
+Definition at line 26 of file Cliente.h.
+
+
+
+Referenced by calcularValorDeCompras(), gerarTotalDeCompras(), and Projeto1::Caixa::receberCliente().
+
+\hypertarget{classProjeto1_1_1Cliente_a37b32637d513c756c817415f618d8d9d}{
+\index{Projeto1::Cliente@{Projeto1::Cliente}!valorCompras@{valorCompras}}
+\index{valorCompras@{valorCompras}!Projeto1::Cliente@{Projeto1::Cliente}}
+\subsubsection[{valorCompras}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Cliente::valorCompras}}}
+\label{classProjeto1_1_1Cliente_a37b32637d513c756c817415f618d8d9d}
+cada item varia entre 1 e 90r\$ dai td junto é colocado aqui 
+
+Definition at line 28 of file Cliente.h.
+
+
+
+Referenced by calcularValorDeCompras(), Cliente(), and Projeto1::Supermercado::posicionarCliente().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Cliente_8h}{Cliente.h}\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Cliente_8cpp}{Cliente.cpp}\end{DoxyCompactItemize}

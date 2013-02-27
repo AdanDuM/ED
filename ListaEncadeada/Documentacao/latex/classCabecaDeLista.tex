@@ -1,0 +1,346 @@
+\hypertarget{classCabecaDeLista}{
+\section{CabecaDeLista Class Reference}
+\label{classCabecaDeLista}\index{CabecaDeLista@{CabecaDeLista}}
+}
+
+
+{\ttfamily \#include $<$CabecaDeLista.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCabecaDeLista_a4f98b6e8ad0e10a0e72815f989bbf69d}{CabecaDeLista} ()
+\item 
+virtual \hyperlink{classCabecaDeLista_a3b9b2d3a2059ca5227a36b8b34644b85}{$\sim$CabecaDeLista} ()
+\item 
+int \hyperlink{classCabecaDeLista_ab6dfa57b422ae81cc2d5f0fe3394bee7}{adiciona} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado)
+\item 
+int \hyperlink{classCabecaDeLista_a2eab1cd95446b6d32d88983983d596ac}{adicionaNoInicio} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado)
+\item 
+int \hyperlink{classCabecaDeLista_ab86a9b79ff968e1fc1a09ae3923140e4}{adicionaNaPosicao} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado, int posicao)
+\item 
+int \hyperlink{classCabecaDeLista_a2c291397e9c6bb65a2b8ede865180781}{adicionaEmOrdem} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado)
+\item 
+\hyperlink{classInfoLista}{InfoLista} $\ast$ \hyperlink{classCabecaDeLista_a5277d2478a360e506b5115c024b8b7be}{retira} ()
+\item 
+\hyperlink{classInfoLista}{InfoLista} $\ast$ \hyperlink{classCabecaDeLista_abbbf9e0e72a5b78cce0eb05a5ed0904a}{retiraDoInicio} ()
+\item 
+\hyperlink{classInfoLista}{InfoLista} $\ast$ \hyperlink{classCabecaDeLista_a942d3c754f89d38000b2e4192a23c690}{retiraDaPosicao} (int posicao)
+\item 
+\hyperlink{classInfoLista}{InfoLista} $\ast$ \hyperlink{classCabecaDeLista_aa6f8b8c3c25f6ed94eee92a4165780bf}{retiraEspecifico} (\hyperlink{classElementoDeLista}{ElementoDeLista} $\ast$elemento)
+\item 
+int \hyperlink{classCabecaDeLista_a19f01b433d6ffa11a02a7c87d52c3d3e}{posicao} (\hyperlink{classElementoDeLista}{ElementoDeLista} $\ast$elemento)
+\item 
+\hypertarget{classCabecaDeLista_ace88d8a3bcc4c6070215a919015fa8de}{
+bool {\bfseries maior} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado1, \hyperlink{classInfoLista}{InfoLista} $\ast$dado2)}
+\label{classCabecaDeLista_ace88d8a3bcc4c6070215a919015fa8de}
+
+\item 
+bool \hyperlink{classCabecaDeLista_a276284222f5596116cc651d8ebe67b25}{igual} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado1, \hyperlink{classInfoLista}{InfoLista} $\ast$dado2)
+\item 
+bool \hyperlink{classCabecaDeLista_a7599301a58eb2d47915cc5c369eb07c7}{menor} (\hyperlink{classInfoLista}{InfoLista} $\ast$dado1, \hyperlink{classInfoLista}{InfoLista} $\ast$dado2)
+\item 
+void \hyperlink{classCabecaDeLista_a7cc8cd2afde1701b051a1e189cc307c2}{mostrarLista} ()
+\item 
+void \hyperlink{classCabecaDeLista_ac66cf4f88607c48bc90ffd48c8786dab}{limpar} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCabecaDeLista_a145b892c11847087e16685c952464a23}{
+\hyperlink{classElementoDeLista}{ElementoDeLista} $\ast$ {\bfseries primeiro}}
+\label{classCabecaDeLista_a145b892c11847087e16685c952464a23}
+
+\item 
+\hypertarget{classCabecaDeLista_a673d6447d41d673f0323c4a33237ad8a}{
+int {\bfseries tamanho}}
+\label{classCabecaDeLista_a673d6447d41d673f0323c4a33237ad8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que modela uma lista encadeada.
+
+Uma lista encadeada ou lista ligada é uma estrutura de dados linear e dinâmica. Ela é composta por células que apontam para o próximo elemento da lista. Para \char`\"{}ter\char`\"{} uma lista ligada/encadeada, basta guardar seu primeiro elemento, e seu último elemento aponta para uma célula nula.\par
+ Para mais informações acesse:\par
+ \href{http://pt.wikipedia.org/wiki/Lista_ligada}{\tt http://pt.wikipedia.org/wiki/Lista\_\-ligada} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCabecaDeLista_a4f98b6e8ad0e10a0e72815f989bbf69d}{
+\index{CabecaDeLista@{CabecaDeLista}!CabecaDeLista@{CabecaDeLista}}
+\index{CabecaDeLista@{CabecaDeLista}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{CabecaDeLista}]{\setlength{\rightskip}{0pt plus 5cm}CabecaDeLista::CabecaDeLista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a4f98b6e8ad0e10a0e72815f989bbf69d}
+Método que constri um objeto que representa uma lista encadeada. \hypertarget{classCabecaDeLista_a3b9b2d3a2059ca5227a36b8b34644b85}{
+\index{CabecaDeLista@{CabecaDeLista}!$\sim$CabecaDeLista@{$\sim$CabecaDeLista}}
+\index{$\sim$CabecaDeLista@{$\sim$CabecaDeLista}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{$\sim$CabecaDeLista}]{\setlength{\rightskip}{0pt plus 5cm}CabecaDeLista::$\sim$CabecaDeLista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCabecaDeLista_a3b9b2d3a2059ca5227a36b8b34644b85}
+Destrutor que exclui uma lista encadeada.
+
+Para isso utiliza o método limpar. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCabecaDeLista_ab6dfa57b422ae81cc2d5f0fe3394bee7}{
+\index{CabecaDeLista@{CabecaDeLista}!adiciona@{adiciona}}
+\index{adiciona@{adiciona}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{adiciona}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeLista::adiciona (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_ab6dfa57b422ae81cc2d5f0fe3394bee7}
+Método que adiciona um elemento da lista.
+
+Primeiramente teste se ainda é possivel adicionar um elemento à lista. Caso isso não seja verdadeiro ele retorna uma constante LISTA\_\-CHEIA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISTA\_\-CHEIA = constante que representa a falta de espaço na Lista. 
+
+tamanho = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_a2c291397e9c6bb65a2b8ede865180781}{
+\index{CabecaDeLista@{CabecaDeLista}!adicionaEmOrdem@{adicionaEmOrdem}}
+\index{adicionaEmOrdem@{adicionaEmOrdem}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{adicionaEmOrdem}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeLista::adicionaEmOrdem (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a2c291397e9c6bb65a2b8ede865180781}
+Método que adiciona um objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISTA\_\-CHEIA = caso a lista em execução já possua o numero de elementos determinado pela variável MAXLISTA. 
+
+ERRO\_\-POSICAO = caso a posição informada seja inválida, ou seja, caso nao esteja entre o inicio e o final da lista. 
+
+tamanho = tamanho final da lista. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_ab86a9b79ff968e1fc1a09ae3923140e4}{
+\index{CabecaDeLista@{CabecaDeLista}!adicionaNaPosicao@{adicionaNaPosicao}}
+\index{adicionaNaPosicao@{adicionaNaPosicao}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{adicionaNaPosicao}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeLista::adicionaNaPosicao (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado, }
+\item[{int}]{posicao}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_ab86a9b79ff968e1fc1a09ae3923140e4}
+Método que adiciona um objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista}.
+
+Para isso verifica se ha espaço na mesma. Caso a questão anterior seja verdadeira o objeto é adicionado na posição recebida pelo parametro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+{\em posicao} & = inteiro que identifica a posição em que o dado vai ser inserido.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISTA\_\-CHEIA = caso a lista em execução já possua o numero de elementos determinado pela variável MAXLISTA. 
+
+ERRO\_\-POSICAO = caso a posição informada seja inválida, ou seja, caso nao esteja entre o inicio e o final da lista. 
+
+tamanho = tamanho final da lista. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_a2eab1cd95446b6d32d88983983d596ac}{
+\index{CabecaDeLista@{CabecaDeLista}!adicionaNoInicio@{adicionaNoInicio}}
+\index{adicionaNoInicio@{adicionaNoInicio}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{adicionaNoInicio}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeLista::adicionaNoInicio (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a2eab1cd95446b6d32d88983983d596ac}
+Método que adiciona no início um objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista}.
+
+Para isso verifica se ha espaço na mesma. Caso a questão anterior seja verdadeira o objeto é adicionado na primeira posição da Lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISRA\_\-CHEIA = constante que representa a falta de espaço na Lista. 
+
+1 = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_a276284222f5596116cc651d8ebe67b25}{
+\index{CabecaDeLista@{CabecaDeLista}!igual@{igual}}
+\index{igual@{igual}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{igual}]{\setlength{\rightskip}{0pt plus 5cm}bool CabecaDeLista::igual (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado1, }
+\item[{{\bf InfoLista} $\ast$}]{dado2}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a276284222f5596116cc651d8ebe67b25}
+Método que informa se um \hyperlink{classInfoLista}{InfoLista} é igual que o segundo recebido por parametro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCabecaDeLista_ac66cf4f88607c48bc90ffd48c8786dab}{
+\index{CabecaDeLista@{CabecaDeLista}!limpar@{limpar}}
+\index{limpar@{limpar}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{limpar}]{\setlength{\rightskip}{0pt plus 5cm}void CabecaDeLista::limpar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_ac66cf4f88607c48bc90ffd48c8786dab}
+Método que desaloca toda a memória alocada dinamicamente para a Lista. \hypertarget{classCabecaDeLista_a7599301a58eb2d47915cc5c369eb07c7}{
+\index{CabecaDeLista@{CabecaDeLista}!menor@{menor}}
+\index{menor@{menor}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{menor}]{\setlength{\rightskip}{0pt plus 5cm}bool CabecaDeLista::menor (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado1, }
+\item[{{\bf InfoLista} $\ast$}]{dado2}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a7599301a58eb2d47915cc5c369eb07c7}
+Método que informa se um \hyperlink{classInfoLista}{InfoLista} é menor que o segundo recebido por parametro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCabecaDeLista_a7cc8cd2afde1701b051a1e189cc307c2}{
+\index{CabecaDeLista@{CabecaDeLista}!mostrarLista@{mostrarLista}}
+\index{mostrarLista@{mostrarLista}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{mostrarLista}]{\setlength{\rightskip}{0pt plus 5cm}void CabecaDeLista::mostrarLista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a7cc8cd2afde1701b051a1e189cc307c2}
+Método que imprime a Lista no console. \hypertarget{classCabecaDeLista_a19f01b433d6ffa11a02a7c87d52c3d3e}{
+\index{CabecaDeLista@{CabecaDeLista}!posicao@{posicao}}
+\index{posicao@{posicao}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{posicao}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeLista::posicao (
+\begin{DoxyParamCaption}
+\item[{{\bf ElementoDeLista} $\ast$}]{elemento}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a19f01b433d6ffa11a02a7c87d52c3d3e}
+Método que identifica a posição de um objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista} recebido por parâmetro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elemento} & = objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISTA\_\-VAZIA = constante que informa que não ha elementos na Lista. 
+
+ERRO\_\-POSICAO caso o objeto em questão nao esteja na Lista. 
+
+posicao = posição onde o \hyperlink{classElementoDeLista}{ElementoDeLista} se encontra na Lista. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_a5277d2478a360e506b5115c024b8b7be}{
+\index{CabecaDeLista@{CabecaDeLista}!retira@{retira}}
+\index{retira@{retira}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{retira}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoLista} $\ast$ CabecaDeLista::retira (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a5277d2478a360e506b5115c024b8b7be}
+Método que retira o último elemento da Lista.
+
+Para isso ele utiliza o método retiraDaPosicao, levando a última posição como parametro. Para maiores informações vide \hyperlink{classCabecaDeLista_a942d3c754f89d38000b2e4192a23c690}{retiraDaPosicao()}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classInfoLista}{InfoLista} = ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_a942d3c754f89d38000b2e4192a23c690}{
+\index{CabecaDeLista@{CabecaDeLista}!retiraDaPosicao@{retiraDaPosicao}}
+\index{retiraDaPosicao@{retiraDaPosicao}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{retiraDaPosicao}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoLista} $\ast$ CabecaDeLista::retiraDaPosicao (
+\begin{DoxyParamCaption}
+\item[{int}]{posicao}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_a942d3c754f89d38000b2e4192a23c690}
+Método que retira o elemento da lista que esta armazenado na posição recebida como parametro.
+
+Prara isso ele testa se a posicao recebida por parametro é válida, isto é, se existe algum objeto armazenado na mesma.
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicao} & = inteiro que determina a localização do dado a ser retirado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0(null) = Caso não seja possível retirar. 
+
+\hyperlink{classInfoLista}{InfoLista} = ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_abbbf9e0e72a5b78cce0eb05a5ed0904a}{
+\index{CabecaDeLista@{CabecaDeLista}!retiraDoInicio@{retiraDoInicio}}
+\index{retiraDoInicio@{retiraDoInicio}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{retiraDoInicio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoLista} $\ast$ CabecaDeLista::retiraDoInicio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_abbbf9e0e72a5b78cce0eb05a5ed0904a}
+Método que retira o primeiro elemento Lista.
+
+\begin{DoxyReturn}{Returns}
+0(NULL) = caso a lista esteja vazia. 
+
+\hyperlink{classInfoLista}{InfoLista} = ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. 
+\end{DoxyReturn}
+\hypertarget{classCabecaDeLista_aa6f8b8c3c25f6ed94eee92a4165780bf}{
+\index{CabecaDeLista@{CabecaDeLista}!retiraEspecifico@{retiraEspecifico}}
+\index{retiraEspecifico@{retiraEspecifico}!CabecaDeLista@{CabecaDeLista}}
+\subsubsection[{retiraEspecifico}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoLista} $\ast$ CabecaDeLista::retiraEspecifico (
+\begin{DoxyParamCaption}
+\item[{{\bf ElementoDeLista} $\ast$}]{elemento}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeLista_aa6f8b8c3c25f6ed94eee92a4165780bf}
+Método que retira um objeto específico da classe \hyperlink{classElementoDeLista}{ElementoDeLista}.
+
+Para isso ele utiliza o método retiraDaPosicao, levando a posição do dado recebido como parametro. Para maiores informações vide \hyperlink{classCabecaDeLista_a942d3c754f89d38000b2e4192a23c690}{retiraDaPosicao()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elemento} & = objeto da classe \hyperlink{classElementoDeLista}{ElementoDeLista} que vai ser retirado da lista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classInfoLista}{InfoLista} = ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/CabecaDeLista.h\item 
+src/CabecaDeLista.cpp\end{DoxyCompactItemize}

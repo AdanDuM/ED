@@ -1,0 +1,171 @@
+\hypertarget{Main_8cpp}{
+\section{/home/will/Programming/C++/ED/Projeto 1/src/Main.cpp File Reference}
+\label{Main_8cpp}\index{/home/will/Programming/C++/ED/Projeto 1/src/Main.cpp@{/home/will/Programming/C++/ED/Projeto 1/src/Main.cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$sstream$>$}\par
+{\ttfamily \#include $<$fstream$>$}\par
+{\ttfamily \#include $<$cstring$>$}\par
+{\ttfamily \#include $<$cstdlib$>$}\par
+{\ttfamily \#include \char`\"{}Supermercado.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ListaCircular.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Main_8cpp_a1b1c6b6618038ab37c3fef0d91b26ef7}{lerConfig} (char $\ast$arquivo)
+\item 
+int \hyperlink{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{Main_8cpp_a8bfd7d7f933840edc1413cbeee9cf9a2}{nomeSupermercado}
+\item 
+int \hyperlink{Main_8cpp_ad3e8f2f65bafdbaf7d08aefc8a460a16}{tempoSimulacao}
+\item 
+int \hyperlink{Main_8cpp_a0b097839315eb6a33ba1e11ce290fc9b}{tempoMedioChegada}
+\item 
+int \hyperlink{Main_8cpp_aa5eaa9032442f50ac580d7ce6b9b8286}{numeroCaixas}
+\item 
+int \hyperlink{Main_8cpp_acedb0012568c8bb2030d21b48c2d98cb}{limiteCaixaEspecial}
+\item 
+\hyperlink{classProjeto1_1_1ListaCircular}{ListaCircular} \hyperlink{Main_8cpp_a532d6a7600fd81cbbb43624d41d385d7}{caixas}
+\item 
+\hyperlink{classProjeto1_1_1Supermercado}{Supermercado} \hyperlink{Main_8cpp_a5698dcc0928efafa87473ca3c2cf2725}{supermercado}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Main_8cpp_a1b1c6b6618038ab37c3fef0d91b26ef7}{
+\index{Main.cpp@{Main.cpp}!lerConfig@{lerConfig}}
+\index{lerConfig@{lerConfig}!Main.cpp@{Main.cpp}}
+\subsubsection[{lerConfig}]{\setlength{\rightskip}{0pt plus 5cm}void lerConfig (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{arquivo}
+\end{DoxyParamCaption}
+)}}
+\label{Main_8cpp_a1b1c6b6618038ab37c3fef0d91b26ef7}
+
+
+Definition at line 24 of file Main.cpp.
+
+
+
+References Projeto1::ListaCircular::adiciona(), caixas, limiteCaixaEspecial, nomeSupermercado, numeroCaixas, tempoMedioChegada, and tempoSimulacao.
+
+
+
+Referenced by main().
+
+\hypertarget{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{
+\index{Main.cpp@{Main.cpp}!main@{main}}
+\index{main@{main}!Main.cpp@{Main.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}
+\label{Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 106 of file Main.cpp.
+
+
+
+References Projeto1::Supermercado::apresentarResultados(), caixas, Projeto1::Supermercado::configurarSimulacao(), Projeto1::Supermercado::iniciarSimulacao(), lerConfig(), limiteCaixaEspecial, nomeSupermercado, supermercado, tempoMedioChegada, and tempoSimulacao.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{Main_8cpp_a532d6a7600fd81cbbb43624d41d385d7}{
+\index{Main.cpp@{Main.cpp}!caixas@{caixas}}
+\index{caixas@{caixas}!Main.cpp@{Main.cpp}}
+\subsubsection[{caixas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ListaCircular} {\bf caixas}}}
+\label{Main_8cpp_a532d6a7600fd81cbbb43624d41d385d7}
+
+
+Definition at line 22 of file Main.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados(), Projeto1::Supermercado::atenderClientes(), Projeto1::Supermercado::chamarCaixaEspecial(), Projeto1::Supermercado::configurarSimulacao(), lerConfig(), main(), Projeto1::Supermercado::posicionarCliente(), and Projeto1::Supermercado::Supermercado().
+
+\hypertarget{Main_8cpp_acedb0012568c8bb2030d21b48c2d98cb}{
+\index{Main.cpp@{Main.cpp}!limiteCaixaEspecial@{limiteCaixaEspecial}}
+\index{limiteCaixaEspecial@{limiteCaixaEspecial}!Main.cpp@{Main.cpp}}
+\subsubsection[{limiteCaixaEspecial}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf limiteCaixaEspecial}}}
+\label{Main_8cpp_acedb0012568c8bb2030d21b48c2d98cb}
+
+
+Definition at line 21 of file Main.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::chamarCaixaEspecial(), Projeto1::Supermercado::configurarSimulacao(), lerConfig(), main(), and Projeto1::Supermercado::Supermercado().
+
+\hypertarget{Main_8cpp_a8bfd7d7f933840edc1413cbeee9cf9a2}{
+\index{Main.cpp@{Main.cpp}!nomeSupermercado@{nomeSupermercado}}
+\index{nomeSupermercado@{nomeSupermercado}!Main.cpp@{Main.cpp}}
+\subsubsection[{nomeSupermercado}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf nomeSupermercado}}}
+\label{Main_8cpp_a8bfd7d7f933840edc1413cbeee9cf9a2}
+
+
+Definition at line 20 of file Main.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados(), Projeto1::Supermercado::configurarSimulacao(), lerConfig(), and main().
+
+\hypertarget{Main_8cpp_aa5eaa9032442f50ac580d7ce6b9b8286}{
+\index{Main.cpp@{Main.cpp}!numeroCaixas@{numeroCaixas}}
+\index{numeroCaixas@{numeroCaixas}!Main.cpp@{Main.cpp}}
+\subsubsection[{numeroCaixas}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf numeroCaixas}}}
+\label{Main_8cpp_aa5eaa9032442f50ac580d7ce6b9b8286}
+
+
+Definition at line 21 of file Main.cpp.
+
+
+
+Referenced by lerConfig().
+
+\hypertarget{Main_8cpp_a5698dcc0928efafa87473ca3c2cf2725}{
+\index{Main.cpp@{Main.cpp}!supermercado@{supermercado}}
+\index{supermercado@{supermercado}!Main.cpp@{Main.cpp}}
+\subsubsection[{supermercado}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supermercado} {\bf supermercado}}}
+\label{Main_8cpp_a5698dcc0928efafa87473ca3c2cf2725}
+
+
+Definition at line 23 of file Main.cpp.
+
+
+
+Referenced by main().
+
+\hypertarget{Main_8cpp_a0b097839315eb6a33ba1e11ce290fc9b}{
+\index{Main.cpp@{Main.cpp}!tempoMedioChegada@{tempoMedioChegada}}
+\index{tempoMedioChegada@{tempoMedioChegada}!Main.cpp@{Main.cpp}}
+\subsubsection[{tempoMedioChegada}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tempoMedioChegada}}}
+\label{Main_8cpp_a0b097839315eb6a33ba1e11ce290fc9b}
+
+
+Definition at line 21 of file Main.cpp.
+
+
+
+Referenced by lerConfig(), and main().
+
+\hypertarget{Main_8cpp_ad3e8f2f65bafdbaf7d08aefc8a460a16}{
+\index{Main.cpp@{Main.cpp}!tempoSimulacao@{tempoSimulacao}}
+\index{tempoSimulacao@{tempoSimulacao}!Main.cpp@{Main.cpp}}
+\subsubsection[{tempoSimulacao}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tempoSimulacao}}}
+\label{Main_8cpp_ad3e8f2f65bafdbaf7d08aefc8a460a16}
+
+
+Definition at line 21 of file Main.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados(), Projeto1::Supermercado::configurarSimulacao(), Projeto1::Supermercado::iniciarSimulacao(), lerConfig(), main(), and Projeto1::Supermercado::Supermercado().
+

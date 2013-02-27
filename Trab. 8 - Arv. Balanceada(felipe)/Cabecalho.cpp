@@ -1,0 +1,92 @@
+#include <iostream>
+#include <cstdlib>
+#include "Cabecalho.h"
+
+using namespace std;
+
+Cabecalho::Cabecalho() {
+	referencia = NULL;
+	tamanho = VAZIA;
+}
+
+Cabecalho::~Cabecalho() {}
+
+Elemento* Cabecalho :: informarReferencia(){
+	return referencia;
+}
+
+int Cabecalho :: informarTamanho(){
+	return tamanho;
+}
+
+bool Cabecalho :: maior(Elemento *um, Elemento *dois){
+	return um->informarConteudo() >  dois->informarConteudo();
+}
+
+
+bool Cabecalho :: testarVazia(){
+	return tamanho == VAZIA;
+}
+
+int Cabecalho :: adicionar(Elemento *novo){
+	Elemento *atual = referencia;
+
+	if(testarVazia()){
+		referencia = novo;
+		return tamanho++;
+	}
+
+	while(true){
+		bool relacao = maior(novo, atual);
+
+		if(atual->informarReferencia(relacao)){
+			atual = atual->informarReferencia(relacao);
+		}
+		else{
+			atual->receberReferencia(novo, relacao);
+			break;
+		}
+	}
+	return tamanho++;
+}
+
+void Cabecalho :: balancear(int *dado, int inicio, int final){	
+	int auxiliar = ((inicio + final) / 2);
+
+	if(auxiliar < final){
+		Elemento *paraAdicionar = new Elemento(dado[auxiliar]);
+		cout << paraAdicionar->informarConteudo() << endl;
+		adicionar(paraAdicionar);
+	}
+
+	if(inicio != auxiliar)
+		balancear(dado, inicio, auxiliar-1);
+
+	if(inicio != final)
+		balancear(dado, auxiliar+1, final);
+}
+
+void Cabecalho :: procurar(Elemento *raiz, int inicio, int final){
+	if(raiz != NULL){
+
+		if(raiz->informarConteudo() <= inicio){
+
+			if(raiz->informarConteudo() == inicio)
+				cout << raiz->informarConteudo() << endl;
+
+			procurar(raiz->informarReferencia(true), inicio, final);
+		}
+		if(raiz->informarConteudo() > inicio){
+			procurar(raiz->informarReferencia(false), inicio, final);
+
+			if(raiz->informarConteudo() <= final){
+
+				if((raiz->informarConteudo() % 2 == 0))
+					cout << raiz->informarConteudo() << endl;
+
+				procurar(raiz->informarReferencia(true), inicio, final);
+			}
+		}
+
+	}
+}

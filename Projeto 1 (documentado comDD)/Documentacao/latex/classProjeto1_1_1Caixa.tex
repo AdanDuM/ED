@@ -1,0 +1,236 @@
+\section{\-Projeto1\-:\-:\-Caixa \-Class \-Reference}
+\label{classProjeto1_1_1Caixa}\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}}
+
+
+{\ttfamily \#include $<$\-Caixa.\-h$>$}
+
+\-Inheritance diagram for \-Projeto1\-:\-:\-Caixa\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProjeto1_1_1Caixa}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Caixa} (char $\ast$nome, int {\bf eficiencia}, int {\bf salario})
+\item 
+virtual {\bf $\sim$\-Caixa} ()
+\item 
+int {\bf enfileirar} ({\bf \-Cliente} $\ast$dado)
+\item 
+{\bf \-Cliente} $\ast$ {\bf desenfileirar} ()
+\item 
+void {\bf limpar} ()
+\item 
+int {\bf receber\-Cliente} ({\bf \-Cliente} $\ast$cliente)
+\item 
+virtual int {\bf forneca\-Lucro} ()
+\item 
+void {\bf atender\-Cliente} (int hora\-Atual)
+\item 
+void {\bf mostrar} ()
+\item 
+void {\bf apresentar\-Relatorio} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bf nome\-Caixa}
+\item 
+int {\bf eficiencia}
+\item 
+int {\bf salario}
+\item 
+int {\bf clientes\-Atendidos}
+\item 
+int {\bf tempo\-Medio}
+\item 
+int {\bf faturamento\-Total}
+\item 
+{\bf \-Elemento\-De\-Fila} $\ast$ {\bf primeiro}
+\item 
+{\bf \-Elemento\-De\-Fila} $\ast$ {\bf ultimo}
+\item 
+int {\bf tamanho\-Fila}
+\item 
+int {\bf total\-Produtos}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe que representa um caixa de um supermercado. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!\-Caixa@{\-Caixa}}
+\index{\-Caixa@{\-Caixa}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{\-Caixa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Projeto1\-::\-Caixa\-::\-Caixa} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome, }
+\item[{int}]{eficienc, }
+\item[{int}]{salari}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_ac54adc569decc044934b973b4066f82e}
+\-Construtor que gera um caixa de supermercado.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nome} & \-: nome do operador do caixa. \\
+\hline
+{\em eficienc} & \-: eficiencia do operador do caixa. \\
+\hline
+{\em salari} & \-: salario do operador do caixa. \\
+\hline
+\end{DoxyParams}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!$\sim$\-Caixa@{$\sim$\-Caixa}}
+\index{$\sim$\-Caixa@{$\sim$\-Caixa}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{$\sim$\-Caixa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Projeto1\-::\-Caixa\-::$\sim$\-Caixa} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{classProjeto1_1_1Caixa_a5860cd7dc1a6fb064f025b8cd24cc872}
+\-Destrutor que exclui um objeto da classe caixa. 
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!apresentar\-Relatorio@{apresentar\-Relatorio}}
+\index{apresentar\-Relatorio@{apresentar\-Relatorio}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{apresentar\-Relatorio}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Caixa\-::apresentar\-Relatorio} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_af4a87b003b6be708d883908573b0f88a}
+\-Método que gera o relatório final da execução. \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!atender\-Cliente@{atender\-Cliente}}
+\index{atender\-Cliente@{atender\-Cliente}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{atender\-Cliente}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Caixa\-::atender\-Cliente} (
+\begin{DoxyParamCaption}
+\item[{int}]{hora\-Atual}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_a2d685c1944e9a0daec3eb37f762596e6}
+\-Método que verificar se o proximo cliente da fila deve ser atendimento.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em hora\-Atual} & \-: instante em que se encontra o programa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Cliente}{p.}{classProjeto1_1_1Cliente} \-: cliente que foi atendido. 
+\end{DoxyReturn}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!desenfileirar@{desenfileirar}}
+\index{desenfileirar@{desenfileirar}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{desenfileirar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cliente} $\ast$ {\bf \-Projeto1\-::\-Caixa\-::desenfileirar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_a60a829984934de75e264bfebbebb56fb}
+\-Método que remove um elemento da \-Fila. \-Primeiramente testa se a \-Fila possui elementos. \-Caso possua ele remove o primeiro elemento, ou seja o primeiro que foi inserido.
+
+\begin{DoxyReturn}{\-Returns}
+0(\-N\-U\-L\-L) = caso a \-Fila não possua elementos. 
+
+volta = ponteiro para um objeto da classe cliente. 
+\end{DoxyReturn}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!enfileirar@{enfileirar}}
+\index{enfileirar@{enfileirar}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{enfileirar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::enfileirar} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cliente} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_a9501a2f8df6c4717db844327ac8c3a82}
+\-Método que adiciona um elemento da fila.
+
+\-Primeiramente teste se ainda é possivel adicionar um elemento à fila. \-Caso isso não seja verdadeiro ele retorna uma constante \-F\-I\-L\-A\-\_\-\-C\-H\-E\-I\-A.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em dado} & = ponteiro para um objeto da classe \doxyref{\-Cliente}{p.}{classProjeto1_1_1Cliente}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-F\-I\-L\-A\-\_\-\-C\-H\-E\-I\-A = constante que representa a falta de espaço na \-Fila. 
+
+tamanho = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!forneca\-Lucro@{forneca\-Lucro}}
+\index{forneca\-Lucro@{forneca\-Lucro}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{forneca\-Lucro}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::forneca\-Lucro} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{classProjeto1_1_1Caixa_a70c900f948864a28e2661dab17b10f9f}
+\-Método que fornece o lucro gerado pelo caixa corrente.
+
+\begin{DoxyReturn}{\-Returns}
+lucro \-: ineiro. 
+\end{DoxyReturn}
+
+
+\-Reimplemented in {\bf \-Projeto1\-::\-Caixa\-Especial} \doxyref{}{p.}{classProjeto1_1_1CaixaEspecial_a8b903f57784cc2f5025108db30939232}.
+
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!limpar@{limpar}}
+\index{limpar@{limpar}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{limpar}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Caixa\-::limpar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_a4363134abfee713c0d02f47510b4e93f}
+\-Método que exclui todos os elementos da fila e suas respectivas informações, representado pela classe \doxyref{\-Cliente}{p.}{classProjeto1_1_1Cliente}. \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{mostrar}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Caixa\-::mostrar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_ae4c5c43dfcbae9198ae70624505f74b5}
+\-Método que imprime as informações do caixa. \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!receber\-Cliente@{receber\-Cliente}}
+\index{receber\-Cliente@{receber\-Cliente}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{receber\-Cliente}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::receber\-Cliente} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cliente} $\ast$}]{cliente}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Caixa_a0492c45bba7b53805bfe322ec1e8b993}
+\-Método que calcula o tempo de saida de um cliente de acordo com seus parâmetros e com a eficoência do caixa.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em cliente} & \-: cliente do supermercado. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!clientes\-Atendidos@{clientes\-Atendidos}}
+\index{clientes\-Atendidos@{clientes\-Atendidos}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{clientes\-Atendidos}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::clientes\-Atendidos}}\label{classProjeto1_1_1Caixa_ac836b24da5b62bd7d9382ada7d0222a4}
+numero de clientes atendidos \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!eficiencia@{eficiencia}}
+\index{eficiencia@{eficiencia}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{eficiencia}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::eficiencia}}\label{classProjeto1_1_1Caixa_aeb2c7dca9680e644f88f3bb9eb606c2a}
+eficiencia do caixa \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!faturamento\-Total@{faturamento\-Total}}
+\index{faturamento\-Total@{faturamento\-Total}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{faturamento\-Total}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::faturamento\-Total}}\label{classProjeto1_1_1Caixa_aab5d05e900f913ed7d705bcb2c4e899d}
+faturamento total \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!nome\-Caixa@{nome\-Caixa}}
+\index{nome\-Caixa@{nome\-Caixa}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{nome\-Caixa}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-Projeto1\-::\-Caixa\-::nome\-Caixa}}\label{classProjeto1_1_1Caixa_a3396ba1f8fd63194ff225ffaf0d5268c}
+identificador do caixa \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!primeiro@{primeiro}}
+\index{primeiro@{primeiro}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{primeiro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elemento\-De\-Fila}$\ast$ {\bf \-Projeto1\-::\-Caixa\-::primeiro}}\label{classProjeto1_1_1Caixa_a81f31c6847218308e3285c385675c3d9}
+\-Fila\-De\-Clientes \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!salario@{salario}}
+\index{salario@{salario}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{salario}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::salario}}\label{classProjeto1_1_1Caixa_ad9f8c9b65400bd1db9004dbb3c9f18ea}
+salario do caixa \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!tamanho\-Fila@{tamanho\-Fila}}
+\index{tamanho\-Fila@{tamanho\-Fila}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{tamanho\-Fila}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::tamanho\-Fila}}\label{classProjeto1_1_1Caixa_a6a968db0d50c39f1429591190ad34791}
+tamanho fila de clientes \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!tempo\-Medio@{tempo\-Medio}}
+\index{tempo\-Medio@{tempo\-Medio}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{tempo\-Medio}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::tempo\-Medio}}\label{classProjeto1_1_1Caixa_a2a7071befa8bd345aae8bc42b9d08e24}
+tempo medio de espera \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!total\-Produtos@{total\-Produtos}}
+\index{total\-Produtos@{total\-Produtos}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{total\-Produtos}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Caixa\-::total\-Produtos}}\label{classProjeto1_1_1Caixa_ab02cf6a92e30a62022a04335742f2767}
+soma de todas as mercadorias dos clientes que estão na fila. \index{\-Projeto1\-::\-Caixa@{\-Projeto1\-::\-Caixa}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!Projeto1::Caixa@{\-Projeto1\-::\-Caixa}}
+\subsubsection[{ultimo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elemento\-De\-Fila}$\ast$ {\bf \-Projeto1\-::\-Caixa\-::ultimo}}\label{classProjeto1_1_1Caixa_adf2463f6ed9828bed7c3def83ab1fd95}
+\-Fila\-De\-Clientes 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Caixa.\-h\item 
+src/\-Caixa.\-cpp\end{DoxyCompactItemize}

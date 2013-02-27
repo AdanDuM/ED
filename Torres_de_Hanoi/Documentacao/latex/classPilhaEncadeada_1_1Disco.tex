@@ -1,0 +1,133 @@
+\hypertarget{classPilhaEncadeada_1_1Disco}{
+\section{PilhaEncadeada::Disco Class Reference}
+\label{classPilhaEncadeada_1_1Disco}\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+}
+
+
+{\ttfamily \#include $<$Disco.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco_ad8afc755bd77c5356a59fba14b0bd0fb}{Disco} ()
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco_a16643aef7d276667da8f94c844d214fe}{Disco} (int \hyperlink{classPilhaEncadeada_1_1Disco_afd23fb89c412e394e695cef34a8dfba7}{origem}, int tamanho)
+\item 
+virtual \hyperlink{classPilhaEncadeada_1_1Disco_ae6592b54516b6510dfa8bd7031ee6031}{$\sim$Disco} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Disco_afd23fb89c412e394e695cef34a8dfba7}{origem}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Disco_ac730ce96cec8f42ea0fab5b4460303f8}{diametro}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$ \hyperlink{classPilhaEncadeada_1_1Disco_af118ba39cf542407c27d9f23ece776ef}{proximo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe para representação de um TAD que será usado para representar os Discos usados no jogo Torres de Hanoi. 
+
+Definition at line 27 of file Disco.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPilhaEncadeada_1_1Disco_ad8afc755bd77c5356a59fba14b0bd0fb}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!Disco@{Disco}}
+\index{Disco@{Disco}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{Disco}]{\setlength{\rightskip}{0pt plus 5cm}home will Programming C ED Torres\_\-de\_\-Hanoi src {\bf Disco} cpp PilhaEncadeada::Disco::Disco (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Disco_ad8afc755bd77c5356a59fba14b0bd0fb}
+Construtor que configura um objeto da classe \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} inicializando tudo em 0. 
+
+Definition at line 15 of file Disco.cpp.
+
+\hypertarget{classPilhaEncadeada_1_1Disco_a16643aef7d276667da8f94c844d214fe}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!Disco@{Disco}}
+\index{Disco@{Disco}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{Disco}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::Disco::Disco (
+\begin{DoxyParamCaption}
+\item[{int}]{o, }
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Disco_a16643aef7d276667da8f94c844d214fe}
+Construtor que configura um objeto da classe \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha}, inicializando proximo em 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & = valor inteiro com que será inicializada a variavel origem. \\
+\hline
+{\em t} & = valor inteiro com que será inicializada a variavel diametro. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Disco.cpp.
+
+\hypertarget{classPilhaEncadeada_1_1Disco_ae6592b54516b6510dfa8bd7031ee6031}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!$\sim$Disco@{$\sim$Disco}}
+\index{$\sim$Disco@{$\sim$Disco}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{$\sim$Disco}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::Disco::$\sim$Disco (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classPilhaEncadeada_1_1Disco_ae6592b54516b6510dfa8bd7031ee6031}
+Destrutor que exclui um objeto da classe \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} 
+
+Definition at line 37 of file Disco.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPilhaEncadeada_1_1Disco_ac730ce96cec8f42ea0fab5b4460303f8}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!diametro@{diametro}}
+\index{diametro@{diametro}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{diametro}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::Disco::diametro}}}
+\label{classPilhaEncadeada_1_1Disco_ac730ce96cec8f42ea0fab5b4460303f8}
+
+
+Definition at line 33 of file Disco.h.
+
+
+
+Referenced by PilhaEncadeada::Pilha::desempilha(), and PilhaEncadeada::Pilha::empilha().
+
+\hypertarget{classPilhaEncadeada_1_1Disco_afd23fb89c412e394e695cef34a8dfba7}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!origem@{origem}}
+\index{origem@{origem}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{origem}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::Disco::origem}}}
+\label{classPilhaEncadeada_1_1Disco_afd23fb89c412e394e695cef34a8dfba7}
+
+
+Definition at line 32 of file Disco.h.
+
+
+
+Referenced by PilhaEncadeada::Pilha::desempilha(), PilhaEncadeada::Pilha::empilha(), and PilhaEncadeada::TorresDeHanoi::moverMenor().
+
+\hypertarget{classPilhaEncadeada_1_1Disco_af118ba39cf542407c27d9f23ece776ef}{
+\index{PilhaEncadeada::Disco@{PilhaEncadeada::Disco}!proximo@{proximo}}
+\index{proximo@{proximo}!PilhaEncadeada::Disco@{PilhaEncadeada::Disco}}
+\subsubsection[{proximo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disco}$\ast$ {\bf PilhaEncadeada::Disco::proximo}}}
+\label{classPilhaEncadeada_1_1Disco_af118ba39cf542407c27d9f23ece776ef}
+
+
+Definition at line 34 of file Disco.h.
+
+
+
+Referenced by PilhaEncadeada::Pilha::contem(), PilhaEncadeada::Pilha::desempilha(), and PilhaEncadeada::Pilha::empilha().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{Disco_8h}{Disco.h}\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{Disco_8cpp}{Disco.cpp}\end{DoxyCompactItemize}

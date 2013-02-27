@@ -1,0 +1,29 @@
+Olá professor/Matheus,
+
+	Como não há nada determinado para este trabalho, então realizamos um leitor de caso de testes.
+
+Para tal, existe os seguintes comandos:
+
+	-> CRIAR - instancia a árvore. 
+
+	-> INSERIR QTD - insere a quantidade de elementos indicado na árvore.
+
+	-> BUSCAR - lê a próxima linha que será interpretado como o número inicial da busca e a próxima como final. Exibindo todos os números pares presente no intervalo.
+
+Segue o exemplo abaixo:
+
+	CRIAR
+	INSERIR 10
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+	BUSCAR
+		2
+		6

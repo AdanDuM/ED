@@ -1,0 +1,196 @@
+\section{\-Projeto1\-:\-:\-Supermercado \-Class \-Reference}
+\label{classProjeto1_1_1Supermercado}\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}}
+
+
+{\ttfamily \#include $<$\-Supermercado.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Supermercado} ({\bf \-Lista\-Circular} $\ast${\bf caixas}, int temp\-Clientes, int tempo\-Total)
+\item 
+void {\bf iniciar\-Simulacao} ()
+\item 
+{\bf \-Cliente} $\ast$ {\bf gerar\-Cliente} (int horario)
+\item 
+int {\bf posicionar\-Cliente} ({\bf \-Cliente} $\ast$novo)
+\item 
+void {\bf atender\-Clientes} (int horario)
+\item 
+void {\bf chamar\-Caixa\-Especial} ()
+\item 
+void {\bf configurar\-Simulacao} (char $\ast$nome, int {\bf tempo\-Simulacao}, int tempo\-Medio\-Chegada, {\bf \-Lista\-Circular} $\ast${\bf caixas})
+\item 
+void {\bf apresentar\-Resultados} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Lista\-Circular} $\ast$ {\bf caixas}
+\item 
+char $\ast$ {\bf nome\-Supermercado}
+\item 
+int {\bf tempo\-Medio\-Clientes}
+\item 
+int {\bf tempo\-Simulacao}
+\item 
+int {\bf desistencias}
+\item 
+int {\bf faturamento\-Bruto}
+\item 
+int {\bf valor\-Desistencias}
+\item 
+int {\bf limite\-Caixa\-Especial}
+\item 
+bool {\bf caixa\-Especialchamado}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe que representa um supremercado. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!\-Supermercado@{\-Supermercado}}
+\index{\-Supermercado@{\-Supermercado}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{\-Supermercado}]{\setlength{\rightskip}{0pt plus 5cm}\-Projeto1\-::\-Supermercado\-::\-Supermercado (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Lista\-Circular} $\ast$}]{c, }
+\item[{int}]{temp\-Clientes, }
+\item[{int}]{tempo\-Total}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_abb21b74f59b760e1e020bd706ad317ce}
+\-Costrutor que gera um objeto da classe supermercado.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em c} & \-: \-Pponteiro para \-Lista \-Circular de caixas do supermercado. \\
+\hline
+{\em temp\-Clientes} & \-: \-Tempo médio de chegada de clientes. \\
+\hline
+{\em tempo\-Total} & \-: \-Tempo total da simulação. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!apresentar\-Resultados@{apresentar\-Resultados}}
+\index{apresentar\-Resultados@{apresentar\-Resultados}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{apresentar\-Resultados}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Supermercado\-::apresentar\-Resultados} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a1c5c7fba6e33df1e597a2ab446dd5dd7}
+\-Método que gera os resultados finais da execução. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!atender\-Clientes@{atender\-Clientes}}
+\index{atender\-Clientes@{atender\-Clientes}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{atender\-Clientes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Supermercado\-::atender\-Clientes} (
+\begin{DoxyParamCaption}
+\item[{int}]{horario}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a1f2947a753d6319f4034423201094451}
+\-Método que atended um cliente.
+
+\-Para isso ele percorre todos os caixas e verifica se o primeiro cliente da fila deve ser atendido, ou seja, se o tempo de saida desse cliente é igual ao tempo atual de execução.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em horario} & \-: hora atual de execução. \\
+\hline
+\end{DoxyParams}
+\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!chamar\-Caixa\-Especial@{chamar\-Caixa\-Especial}}
+\index{chamar\-Caixa\-Especial@{chamar\-Caixa\-Especial}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{chamar\-Caixa\-Especial}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Supermercado\-::chamar\-Caixa\-Especial} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a9e2055bab0973293e53c24154256a126}
+\-Método que chama (constrói) um caixa do tipo caixa expecial. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!configurar\-Simulacao@{configurar\-Simulacao}}
+\index{configurar\-Simulacao@{configurar\-Simulacao}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{configurar\-Simulacao}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Supermercado\-::configurar\-Simulacao} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome, }
+\item[{int}]{tempo\-S, }
+\item[{int}]{tempo\-Medio\-C, }
+\item[{{\bf \-Lista\-Circular} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a560d2db6aee2e236123e0af23cbcf1b9}
+\-Método que configura a simulação.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nome} & \-: nome do supermercado. \\
+\hline
+{\em tempo\-S} & \-: tempo de simulação. \\
+\hline
+{\em tempo\-Medio\-C} & \-: tempo médio de chegada de clientes. \\
+\hline
+{\em c} & \-: lista de caixas; \\
+\hline
+\end{DoxyParams}
+\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!gerar\-Cliente@{gerar\-Cliente}}
+\index{gerar\-Cliente@{gerar\-Cliente}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{gerar\-Cliente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cliente} $\ast$ {\bf \-Projeto1\-::\-Supermercado\-::gerar\-Cliente} (
+\begin{DoxyParamCaption}
+\item[{int}]{horario}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a8182c122d2b8141f34c423762433c4f2}
+\-Método que gera um cliente do supremercado, decidindo o tipo do mesmo.
+
+\-Existem dois tipos de clientes, os que buscam a fila com menos clientes e os que buscam uma fila com menor numero de produtos dos outros clientes. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!iniciar\-Simulacao@{iniciar\-Simulacao}}
+\index{iniciar\-Simulacao@{iniciar\-Simulacao}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{iniciar\-Simulacao}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Supermercado\-::iniciar\-Simulacao} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a95984fac6635ea22f660e4038266b132}
+\-Método que executa a simulação.
+
+\-Para isso percorre segundo a segundo executando os passos da simulação. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!posicionar\-Cliente@{posicionar\-Cliente}}
+\index{posicionar\-Cliente@{posicionar\-Cliente}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{posicionar\-Cliente}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::posicionar\-Cliente} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cliente} $\ast$}]{novo}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1Supermercado_a006f42c2ab267236c96c5037230dd43a}
+\-Método que posiciona um cliente na fila de um caixa, de acordo com seu tipo.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em novo} & \-: \doxyref{\-Cliente}{p.}{classProjeto1_1_1Cliente} a ser posicionado. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!caixa\-Especialchamado@{caixa\-Especialchamado}}
+\index{caixa\-Especialchamado@{caixa\-Especialchamado}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{caixa\-Especialchamado}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Projeto1\-::\-Supermercado\-::caixa\-Especialchamado}}\label{classProjeto1_1_1Supermercado_a5e49476334361f1d056f5394a517a763}
+\-Informação se um caixa especial já foi chamado. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!caixas@{caixas}}
+\index{caixas@{caixas}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{caixas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Lista\-Circular}$\ast$ {\bf \-Projeto1\-::\-Supermercado\-::caixas}}\label{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}
+\-Lista de caixas. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!desistencias@{desistencias}}
+\index{desistencias@{desistencias}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{desistencias}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::desistencias}}\label{classProjeto1_1_1Supermercado_a258d2c48df71a1827f83e2658aa1e26d}
+\-Número de clientes que desistiram. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!faturamento\-Bruto@{faturamento\-Bruto}}
+\index{faturamento\-Bruto@{faturamento\-Bruto}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{faturamento\-Bruto}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::faturamento\-Bruto}}\label{classProjeto1_1_1Supermercado_adcecd89e129cf0486b6ce02d162c4a55}
+\-Faturamento bruto do supermercado. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!limite\-Caixa\-Especial@{limite\-Caixa\-Especial}}
+\index{limite\-Caixa\-Especial@{limite\-Caixa\-Especial}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{limite\-Caixa\-Especial}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::limite\-Caixa\-Especial}}\label{classProjeto1_1_1Supermercado_a11e5d386fe154d3e8ee3d8f7fa3d28a1}
+\-Limite para chamar um caixa especial. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!nome\-Supermercado@{nome\-Supermercado}}
+\index{nome\-Supermercado@{nome\-Supermercado}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{nome\-Supermercado}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-Projeto1\-::\-Supermercado\-::nome\-Supermercado}}\label{classProjeto1_1_1Supermercado_a05fc2f885e22cf0d109d921d0f386baa}
+\-Nome do supermercado. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!tempo\-Medio\-Clientes@{tempo\-Medio\-Clientes}}
+\index{tempo\-Medio\-Clientes@{tempo\-Medio\-Clientes}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{tempo\-Medio\-Clientes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::tempo\-Medio\-Clientes}}\label{classProjeto1_1_1Supermercado_a91df73523b452afac103edea5862f651}
+\-Tempo medio de chegada de clientes. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!tempo\-Simulacao@{tempo\-Simulacao}}
+\index{tempo\-Simulacao@{tempo\-Simulacao}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{tempo\-Simulacao}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::tempo\-Simulacao}}\label{classProjeto1_1_1Supermercado_a6ec7501178b500d6a82330c99f95867e}
+\-Tempo de \-Simulação. \index{\-Projeto1\-::\-Supermercado@{\-Projeto1\-::\-Supermercado}!valor\-Desistencias@{valor\-Desistencias}}
+\index{valor\-Desistencias@{valor\-Desistencias}!Projeto1::Supermercado@{\-Projeto1\-::\-Supermercado}}
+\subsubsection[{valor\-Desistencias}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Supermercado\-::valor\-Desistencias}}\label{classProjeto1_1_1Supermercado_af210ce3a01e004c464d8abb03c74fedc}
+\-Prejuiso gerado pelas desistências. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Supermercado.\-h\item 
+src/\-Supermercado.\-cpp\end{DoxyCompactItemize}

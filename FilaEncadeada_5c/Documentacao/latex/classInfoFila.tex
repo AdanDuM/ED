@@ -1,0 +1,188 @@
+\hypertarget{classInfoFila}{
+\section{InfoFila Class Reference}
+\label{classInfoFila}\index{InfoFila@{InfoFila}}
+}
+
+
+{\ttfamily \#include $<$InfoFila.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInfoFila_a6a0d90a2bda334249efc3d4a3e5714c2}{InfoFila} ()
+\item 
+\hyperlink{classInfoFila_a5611dfa5016b4dbc789615ceb71d004e}{InfoFila} (char $\ast$\hyperlink{classInfoFila_acf4cfe03a2a0b010e53536d02aafae7d}{nome}, char $\ast$tel, char $\ast$entrega, char $\ast$\hyperlink{classInfoFila_a72e9667faf3a9c779e27811c15868d9c}{preco})
+\item 
+virtual \hyperlink{classInfoFila_aab019bfb81ebba0239526235b8638139}{$\sim$InfoFila} ()
+\item 
+void \hyperlink{classInfoFila_a24009b498f81ae2dd5263c71a6f0019d}{mostrar} (int semanas)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classInfoFila_acf4cfe03a2a0b010e53536d02aafae7d}{nome}
+\item 
+char $\ast$ \hyperlink{classInfoFila_af9e1cef9a6da2e844d2ef97a115a1522}{telefone}
+\item 
+char $\ast$ \hyperlink{classInfoFila_aad74e3cb039d5f01ee37dbf773b07948}{modelo}
+\item 
+char $\ast$ \hyperlink{classInfoFila_a72e9667faf3a9c779e27811c15868d9c}{preco}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa as informações de um elemento de uma Fila. 
+
+Definition at line 29 of file InfoFila.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classInfoFila_a6a0d90a2bda334249efc3d4a3e5714c2}{
+\index{InfoFila@{InfoFila}!InfoFila@{InfoFila}}
+\index{InfoFila@{InfoFila}!InfoFila@{InfoFila}}
+\subsubsection[{InfoFila}]{\setlength{\rightskip}{0pt plus 5cm}InfoFila::InfoFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoFila_a6a0d90a2bda334249efc3d4a3e5714c2}
+Método que constri um objeto que representa as informações de um elemento da Fila. 
+
+Definition at line 15 of file InfoFIla.cpp.
+
+\hypertarget{classInfoFila_a5611dfa5016b4dbc789615ceb71d004e}{
+\index{InfoFila@{InfoFila}!InfoFila@{InfoFila}}
+\index{InfoFila@{InfoFila}!InfoFila@{InfoFila}}
+\subsubsection[{InfoFila}]{\setlength{\rightskip}{0pt plus 5cm}InfoFila::InfoFila (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nom, }
+\item[{char $\ast$}]{tel, }
+\item[{char $\ast$}]{mod, }
+\item[{char $\ast$}]{pre}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoFila_a5611dfa5016b4dbc789615ceb71d004e}
+Método que constri um objeto que representa as informações de um elemento da Fila.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$nome = ponteiro para o nome do proprietário do computador. \\
+\hline
+{\em char} & $\ast$telefone = ponteiro para o telefone do proprietário do computador. \\
+\hline
+{\em char} & $\ast$modelo = ponteiro para o modelo do computador a ser consertado. \\
+\hline
+{\em char} & $\ast$preço = ponteiro para o preço aproximado do conserto. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file InfoFIla.cpp.
+
+
+
+References modelo, nome, preco, and telefone.
+
+\hypertarget{classInfoFila_aab019bfb81ebba0239526235b8638139}{
+\index{InfoFila@{InfoFila}!$\sim$InfoFila@{$\sim$InfoFila}}
+\index{$\sim$InfoFila@{$\sim$InfoFila}!InfoFila@{InfoFila}}
+\subsubsection[{$\sim$InfoFila}]{\setlength{\rightskip}{0pt plus 5cm}InfoFila::$\sim$InfoFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classInfoFila_aab019bfb81ebba0239526235b8638139}
+Destrutor que exclui um elemento da classe \hyperlink{classInfoFila}{InfoFila}. Para isso desaloca a memoria respectiva a todas as informações contidas no objeto em questão. 
+
+Definition at line 40 of file InfoFIla.cpp.
+
+
+
+References modelo, nome, preco, and telefone.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classInfoFila_a24009b498f81ae2dd5263c71a6f0019d}{
+\index{InfoFila@{InfoFila}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!InfoFila@{InfoFila}}
+\subsubsection[{mostrar}]{\setlength{\rightskip}{0pt plus 5cm}void InfoFila::mostrar (
+\begin{DoxyParamCaption}
+\item[{int}]{semanas}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoFila_a24009b498f81ae2dd5263c71a6f0019d}
+Método que imprime na tela os dados da chamada de serviço. 
+
+Definition at line 51 of file InfoFIla.cpp.
+
+
+
+References modelo, nome, preco, and telefone.
+
+
+
+Referenced by CabecaDeFila::enfileirar().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classInfoFila_aad74e3cb039d5f01ee37dbf773b07948}{
+\index{InfoFila@{InfoFila}!modelo@{modelo}}
+\index{modelo@{modelo}!InfoFila@{InfoFila}}
+\subsubsection[{modelo}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ {\bf InfoFila::modelo}}}
+\label{classInfoFila_aad74e3cb039d5f01ee37dbf773b07948}
+
+
+Definition at line 35 of file InfoFila.h.
+
+
+
+Referenced by InfoFila(), mostrar(), and $\sim$InfoFila().
+
+\hypertarget{classInfoFila_acf4cfe03a2a0b010e53536d02aafae7d}{
+\index{InfoFila@{InfoFila}!nome@{nome}}
+\index{nome@{nome}!InfoFila@{InfoFila}}
+\subsubsection[{nome}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf InfoFila::nome}}}
+\label{classInfoFila_acf4cfe03a2a0b010e53536d02aafae7d}
+
+
+Definition at line 35 of file InfoFila.h.
+
+
+
+Referenced by InfoFila(), mostrar(), and $\sim$InfoFila().
+
+\hypertarget{classInfoFila_a72e9667faf3a9c779e27811c15868d9c}{
+\index{InfoFila@{InfoFila}!preco@{preco}}
+\index{preco@{preco}!InfoFila@{InfoFila}}
+\subsubsection[{preco}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ {\bf InfoFila::preco}}}
+\label{classInfoFila_a72e9667faf3a9c779e27811c15868d9c}
+
+
+Definition at line 35 of file InfoFila.h.
+
+
+
+Referenced by InfoFila(), mostrar(), and $\sim$InfoFila().
+
+\hypertarget{classInfoFila_af9e1cef9a6da2e844d2ef97a115a1522}{
+\index{InfoFila@{InfoFila}!telefone@{telefone}}
+\index{telefone@{telefone}!InfoFila@{InfoFila}}
+\subsubsection[{telefone}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ {\bf InfoFila::telefone}}}
+\label{classInfoFila_af9e1cef9a6da2e844d2ef97a115a1522}
+
+
+Definition at line 35 of file InfoFila.h.
+
+
+
+Referenced by InfoFila(), mostrar(), and $\sim$InfoFila().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{InfoFila_8h}{InfoFila.h}\item 
+src/\hyperlink{InfoFIla_8cpp}{InfoFIla.cpp}\end{DoxyCompactItemize}

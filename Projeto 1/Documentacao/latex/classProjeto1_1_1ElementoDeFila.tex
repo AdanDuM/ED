@@ -1,0 +1,117 @@
+\hypertarget{classProjeto1_1_1ElementoDeFila}{
+\section{Projeto1::ElementoDeFila Class Reference}
+\label{classProjeto1_1_1ElementoDeFila}\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+}
+
+
+{\ttfamily \#include $<$ElementoDeFila.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeFila_a04c2a994dcd9c959645e1973edbdece1}{ElementoDeFila} ()
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeFila_aade4aa1072f2467b3bfd4c6474c87faa}{ElementoDeFila} (\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$info)
+\item 
+virtual \hyperlink{classProjeto1_1_1ElementoDeFila_ab01575efe125553a2024453032654fd5}{$\sim$ElementoDeFila} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classProjeto1_1_1ElementoDeFila_a2ca3828f86b949959b03c3f0986434c8}{proximo}
+\item 
+\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$ \hyperlink{classProjeto1_1_1ElementoDeFila_a5a75508f83800ff9eded46dc6fdfc71f}{cliente}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um objeto pertencente a uma lista genérica. 
+
+Definition at line 18 of file ElementoDeFila.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjeto1_1_1ElementoDeFila_a04c2a994dcd9c959645e1973edbdece1}{
+\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\index{ElementoDeFila@{ElementoDeFila}!Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+\subsubsection[{ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::ElementoDeFila::ElementoDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1ElementoDeFila_a04c2a994dcd9c959645e1973edbdece1}
+Método que constrói um objeto que representa uma elemento de uma fila encadeado. 
+
+Definition at line 16 of file ElementoDeFila.cpp.
+
+\hypertarget{classProjeto1_1_1ElementoDeFila_aade4aa1072f2467b3bfd4c6474c87faa}{
+\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}!ElementoDeFila@{ElementoDeFila}}
+\index{ElementoDeFila@{ElementoDeFila}!Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+\subsubsection[{ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::ElementoDeFila::ElementoDeFila (
+\begin{DoxyParamCaption}
+\item[{{\bf Cliente} $\ast$}]{inf}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1ElementoDeFila_aade4aa1072f2467b3bfd4c6474c87faa}
+Método que constrói um objeto que representa uma elemento de uma fila encadeado. 
+\begin{DoxyParams}{Parameters}
+{\em inf} & : ponteiro para um objeto da classe \hyperlink{classProjeto1_1_1Cliente}{Cliente}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file ElementoDeFila.cpp.
+
+
+
+References cliente.
+
+\hypertarget{classProjeto1_1_1ElementoDeFila_ab01575efe125553a2024453032654fd5}{
+\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}!$\sim$ElementoDeFila@{$\sim$ElementoDeFila}}
+\index{$\sim$ElementoDeFila@{$\sim$ElementoDeFila}!Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+\subsubsection[{$\sim$ElementoDeFila}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::ElementoDeFila::$\sim$ElementoDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1ElementoDeFila_ab01575efe125553a2024453032654fd5}
+Destrutor que exclui um elemento da Fila. 
+
+Definition at line 33 of file ElementoDeFila.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classProjeto1_1_1ElementoDeFila_a5a75508f83800ff9eded46dc6fdfc71f}{
+\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}!cliente@{cliente}}
+\index{cliente@{cliente}!Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+\subsubsection[{cliente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cliente}$\ast$ {\bf Projeto1::ElementoDeFila::cliente}}}
+\label{classProjeto1_1_1ElementoDeFila_a5a75508f83800ff9eded46dc6fdfc71f}
+Ponteiro para o cliente referente a este elemento da fila. 
+
+Definition at line 26 of file ElementoDeFila.h.
+
+
+
+Referenced by Projeto1::Caixa::desenfileirar(), ElementoDeFila(), and Projeto1::Caixa::limpar().
+
+\hypertarget{classProjeto1_1_1ElementoDeFila_a2ca3828f86b949959b03c3f0986434c8}{
+\index{Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}!proximo@{proximo}}
+\index{proximo@{proximo}!Projeto1::ElementoDeFila@{Projeto1::ElementoDeFila}}
+\subsubsection[{proximo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila}$\ast$ {\bf Projeto1::ElementoDeFila::proximo}}}
+\label{classProjeto1_1_1ElementoDeFila_a2ca3828f86b949959b03c3f0986434c8}
+Proximo cliente da fila do caixa 
+
+Definition at line 24 of file ElementoDeFila.h.
+
+
+
+Referenced by Projeto1::Caixa::desenfileirar(), Projeto1::Caixa::enfileirar(), and Projeto1::Caixa::limpar().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{ElementoDeFila_8h}{ElementoDeFila.h}\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{ElementoDeFila_8cpp}{ElementoDeFila.cpp}\end{DoxyCompactItemize}

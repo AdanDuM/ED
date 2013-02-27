@@ -1,0 +1,7 @@
+21:02:23 **** Clean-only build of configuration Debug for project Projeto 1_2 ****
+make clean 
+rm -rf  ./src/BuscaFilaComMenosProdutos.o ./src/BuscaMenorFila.o ./src/Caixa.o ./src/Cliente.o ./src/Main.o  ./src/BuscaFilaComMenosProdutos.d ./src/BuscaMenorFila.d ./src/Caixa.d ./src/Cliente.d ./src/Main.d  "Projeto 1_2"
+ 
+
+21:02:23 Build Finished (took 106ms)
+

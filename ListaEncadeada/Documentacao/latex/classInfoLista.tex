@@ -1,0 +1,136 @@
+\hypertarget{classInfoLista}{
+\section{InfoLista Class Reference}
+\label{classInfoLista}\index{InfoLista@{InfoLista}}
+}
+
+
+{\ttfamily \#include $<$InfoLista.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInfoLista_a871f01546b40a897dc288429b5eea074}{InfoLista} (char $\ast$nome, char $\ast$tel)
+\item 
+virtual \hyperlink{classInfoLista_aeea4b3c1ae53da265e498491836194af}{$\sim$InfoLista} ()
+\item 
+bool \hyperlink{classInfoLista_a01e2da9f49b956050bd1ed8013f50ebb}{maior} (\hyperlink{classInfoLista}{InfoLista} $\ast$elemento)
+\item 
+bool \hyperlink{classInfoLista_a70506fe7f409bf4b263d44a1ef70d511}{igual} (\hyperlink{classInfoLista}{InfoLista} $\ast$elemento)
+\item 
+bool \hyperlink{classInfoLista_a6ff726d635246d316a477a9fad40f2d5}{menor} (\hyperlink{classInfoLista}{InfoLista} $\ast$elemento)
+\item 
+void \hyperlink{classInfoLista_a818f2420b2b316d18e11ba435eb705d7}{mostrar} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classInfoLista_a6ce8f8cff5e131de2458772f8f3b2502}{
+char $\ast$ {\bfseries nome}}
+\label{classInfoLista_a6ce8f8cff5e131de2458772f8f3b2502}
+
+\item 
+\hypertarget{classInfoLista_a9ba6cfcb036102a3c3e996ff2f1e6169}{
+char $\ast$ {\bfseries telefone}}
+\label{classInfoLista_a9ba6cfcb036102a3c3e996ff2f1e6169}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa as informações de um elemento de uma Lista. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classInfoLista_a871f01546b40a897dc288429b5eea074}{
+\index{InfoLista@{InfoLista}!InfoLista@{InfoLista}}
+\index{InfoLista@{InfoLista}!InfoLista@{InfoLista}}
+\subsubsection[{InfoLista}]{\setlength{\rightskip}{0pt plus 5cm}InfoLista::InfoLista (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nom, }
+\item[{char $\ast$}]{tel}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoLista_a871f01546b40a897dc288429b5eea074}
+Método que constri um objeto que representa as informações de um elemento da Lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$mome = ponteiro para char que representa o nome da pessoa na lista telefônica. \\
+\hline
+{\em char} & $\ast$telefone = ponteiro para char que representa o telefone da pessoa na lista telefônica. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInfoLista_aeea4b3c1ae53da265e498491836194af}{
+\index{InfoLista@{InfoLista}!$\sim$InfoLista@{$\sim$InfoLista}}
+\index{$\sim$InfoLista@{$\sim$InfoLista}!InfoLista@{InfoLista}}
+\subsubsection[{$\sim$InfoLista}]{\setlength{\rightskip}{0pt plus 5cm}InfoLista::$\sim$InfoLista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classInfoLista_aeea4b3c1ae53da265e498491836194af}
+Destrutor que exclui um elemento da classe \hyperlink{classInfoLista}{InfoLista}. Para isso desaloca a memoria respectiva a todas as informações contidas no objeto em questão. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classInfoLista_a70506fe7f409bf4b263d44a1ef70d511}{
+\index{InfoLista@{InfoLista}!igual@{igual}}
+\index{igual@{igual}!InfoLista@{InfoLista}}
+\subsubsection[{igual}]{\setlength{\rightskip}{0pt plus 5cm}bool InfoLista::igual (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoLista_a70506fe7f409bf4b263d44a1ef70d511}
+Método que informa se um \hyperlink{classInfoLista}{InfoLista} é igual ao objeto que executa essa ação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInfoLista_a01e2da9f49b956050bd1ed8013f50ebb}{
+\index{InfoLista@{InfoLista}!maior@{maior}}
+\index{maior@{maior}!InfoLista@{InfoLista}}
+\subsubsection[{maior}]{\setlength{\rightskip}{0pt plus 5cm}bool InfoLista::maior (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoLista_a01e2da9f49b956050bd1ed8013f50ebb}
+Método que informa se um \hyperlink{classInfoLista}{InfoLista} é maior ao objeto que executa essa ação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInfoLista_a6ff726d635246d316a477a9fad40f2d5}{
+\index{InfoLista@{InfoLista}!menor@{menor}}
+\index{menor@{menor}!InfoLista@{InfoLista}}
+\subsubsection[{menor}]{\setlength{\rightskip}{0pt plus 5cm}bool InfoLista::menor (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoLista} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoLista_a6ff726d635246d316a477a9fad40f2d5}
+Método que informa se um \hyperlink{classInfoLista}{InfoLista} é menor ao objeto que executa essa ação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoLista}{InfoLista}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoLista}{InfoLista}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classInfoLista_a818f2420b2b316d18e11ba435eb705d7}{
+\index{InfoLista@{InfoLista}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!InfoLista@{InfoLista}}
+\subsubsection[{mostrar}]{\setlength{\rightskip}{0pt plus 5cm}void InfoLista::mostrar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classInfoLista_a818f2420b2b316d18e11ba435eb705d7}
+Método que imprime na tela os dados da lista telefônica. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/InfoLista.h\item 
+src/InfoLista.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+21:11:07 **** Incremental Build of configuration Debug for project Projeto ****
+make all 
+Building file: ../src/Cliente.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cliente.d" -MT"src/Cliente.d" -o "src/Cliente.o" "../src/Cliente.cpp"
+../src/Cliente.cpp: In constructor ‘Projeto1::Cliente::Cliente()’:
+../src/Cliente.cpp:17:6: warning: unused variable ‘chegada’
+../src/Cliente.cpp:18:6: warning: unused variable ‘saida’
+Finished building: ../src/Cliente.cpp
+ 
+Building target: Projeto
+Invoking: Cross G++ Linker
+g++  -o "Projeto"  ./src/BuscaFilaComMenosProdutos.o ./src/BuscaMenorFila.o ./src/Caixa.o ./src/CaixaEspecial.o ./src/Cliente.o ./src/ElementoDeFila.o ./src/Main.o   
+Finished building target: Projeto
+ 
+
+21:11:07 Build Finished (took 159ms)
+

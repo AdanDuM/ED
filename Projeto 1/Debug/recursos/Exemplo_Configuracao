@@ -1,0 +1,24 @@
+#=====================================================
+# 									#
+# Nome do Supermercado Inclusive Brancos			#
+# tempo_de_simulacao_em_horas					#
+# tempo_medio_de_chegada_de_cliente_em_segundos		#
+# Tamanho_limite_das_filas_para_chamar_Caixa_especial #				
+# 									#
+# numero de caixas						#
+#									#
+# id_caixa1_sem_brancos eficiencia1 salario1		#
+# id_caixa2_sem_brancos eficiencia2 salario2		#
+# - - -								#
+# id_caixaN_sem_brancos eficienciaN salarioN		#
+#									#
+#=====================================================
+NaoCompre Costeira
+3
+120
+5
+4
+Maria_Benta 3 300
+Juliana_Digito 3 400
+Zeca_Mole 3 500
+Joao_DeMora 3 600

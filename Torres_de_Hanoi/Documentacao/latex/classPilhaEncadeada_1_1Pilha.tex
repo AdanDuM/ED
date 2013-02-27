@@ -1,0 +1,262 @@
+\hypertarget{classPilhaEncadeada_1_1Pilha}{
+\section{PilhaEncadeada::Pilha Class Reference}
+\label{classPilhaEncadeada_1_1Pilha}\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+}
+
+
+{\ttfamily \#include $<$Pilha.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Pilha_a8839d40a55b4011f57dae2785db9dd20}{Pilha} ()
+\item 
+virtual \hyperlink{classPilhaEncadeada_1_1Pilha_ae2ff1464cc3b931a67f2d9f56ac96510}{$\sim$Pilha} ()
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Pilha_a7790d2620d0852f24062a13f58a08539}{empilha} (\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$novo)
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$ \hyperlink{classPilhaEncadeada_1_1Pilha_ac27948bfd84d7b98d38152bdc8f669e2}{desempilha} ()
+\item 
+bool \hyperlink{classPilhaEncadeada_1_1Pilha_ae4484368aedfccd43d2515466d6582f9}{vazia} ()
+\item 
+bool \hyperlink{classPilhaEncadeada_1_1Pilha_a1ced9a36db9090bc39d1f4da63884158}{contem} (\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$examinado)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilhaEncadeada_1_1Disco}{Disco} $\ast$ \hyperlink{classPilhaEncadeada_1_1Pilha_a061ad72a4dfdb0f0135c61d564801299}{topo}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Pilha_aae9cbeca741bf5ef1fbae7a6aba3ae64}{id}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Pilha_ae5b7e5d7daefb67f057320b4740444ab}{tamanho}
+\item 
+int \hyperlink{classPilhaEncadeada_1_1Pilha_ab826a0678ab53623c85b8fd3b0a2b993}{diametroTopo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe para representação de estruturas de dados \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha}.
+
+As pilhas são estruturas baseadas no princípio LIFO (last in, first out), na qual os dados que foram inseridos primeiros na pilha serão os últimos a serem removidos. Existem duas funções que se aplicam a todas as pilhas: EMPILHA (PUSH), que insere um dado no topo da pilha, e DESEMPILHAR (POP), que remove o item no topo da pilha. 
+
+Definition at line 37 of file Pilha.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPilhaEncadeada_1_1Pilha_a8839d40a55b4011f57dae2785db9dd20}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!Pilha@{Pilha}}
+\index{Pilha@{Pilha}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{Pilha}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::Pilha::Pilha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Pilha_a8839d40a55b4011f57dae2785db9dd20}
+Construtor que configura um objeto da classe \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} que inicializa tudo em 0; 
+
+Definition at line 15 of file Pilha.cpp.
+
+
+
+References diametroTopo, tamanho, and topo.
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_ae2ff1464cc3b931a67f2d9f56ac96510}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!$\sim$Pilha@{$\sim$Pilha}}
+\index{$\sim$Pilha@{$\sim$Pilha}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{$\sim$Pilha}]{\setlength{\rightskip}{0pt plus 5cm}PilhaEncadeada::Pilha::$\sim$Pilha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classPilhaEncadeada_1_1Pilha_ae2ff1464cc3b931a67f2d9f56ac96510}
+Destrutor que exclui um objeto da classe \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha} 
+
+Definition at line 24 of file Pilha.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPilhaEncadeada_1_1Pilha_a1ced9a36db9090bc39d1f4da63884158}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!contem@{contem}}
+\index{contem@{contem}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{contem}]{\setlength{\rightskip}{0pt plus 5cm}bool PilhaEncadeada::Pilha::contem (
+\begin{DoxyParamCaption}
+\item[{{\bf Disco} $\ast$}]{examinado}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Pilha_a1ced9a36db9090bc39d1f4da63884158}
+Método que verifica se um objeto \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} está ou nao na pilha.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$examinado} & = ponteiro para um objeto do tipo \hyperlink{classPilhaEncadeada_1_1Disco}{Disco}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true caso o ponteiro esteje contido. 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Pilha.cpp.
+
+
+
+References PilhaEncadeada::Disco::proximo, and topo.
+
+
+
+Referenced by PilhaEncadeada::TorresDeHanoi::moverMenor().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_ac27948bfd84d7b98d38152bdc8f669e2}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!desempilha@{desempilha}}
+\index{desempilha@{desempilha}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{desempilha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disco} $\ast$ PilhaEncadeada::Pilha::desempilha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Pilha_ac27948bfd84d7b98d38152bdc8f669e2}
+Método que retira o ultimo elemento pilha.
+
+Para isso ele verifica se a pilha esta vazia. Caso não esteja, retira o elemento que esta no topo da pilha(ultima poscição), atualiza o topo e o diametro do Topo(caso acabe vazia o diametro será considerado zero), e o retorna para ser usado.
+
+\begin{DoxyReturn}{Returns}
+PILHA\_\-VAZIA = caso a pilha em execução esteja vazia, será retornado o codigo de erro PILHA\_\-VAZIA.
+
+Ponteiro para um objeto do tipo \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} que está na ultima posição da \hyperlink{classPilhaEncadeada_1_1Pilha}{Pilha}. 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Pilha.cpp.
+
+
+
+References PilhaEncadeada::Disco::diametro, diametroTopo, id, PilhaEncadeada::Disco::origem, PILHA\_\-VAZIA, PilhaEncadeada::Disco::proximo, tamanho, topo, and vazia().
+
+
+
+Referenced by PilhaEncadeada::TorresDeHanoi::fazerJogadaSeguinte(), PilhaEncadeada::TorresDeHanoi::moverMenor(), PilhaEncadeada::TorresDeHanoi::resolverImpar(), and PilhaEncadeada::TorresDeHanoi::resolverPar().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_a7790d2620d0852f24062a13f58a08539}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!empilha@{empilha}}
+\index{empilha@{empilha}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{empilha}]{\setlength{\rightskip}{0pt plus 5cm}int PilhaEncadeada::Pilha::empilha (
+\begin{DoxyParamCaption}
+\item[{{\bf Disco} $\ast$}]{novo}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Pilha_a7790d2620d0852f24062a13f58a08539}
+Método que adiciona um ponteiro para um objeto \hyperlink{classPilhaEncadeada_1_1Disco}{Disco}.
+
+Para isso verifica se o ponteiro é valido. Também verifica se a lista está vazia.Caso a questão anterior seja verdadeira o objeto é adicionado na primeira posição da Lista.Caso seja falsa é adicionado na posição seguinte a da ultima.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$novo} & = ponteiro para um objeto do tipo \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} que tentará ser adicionado na pilha.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERRO\_\-MOVIMENTO = caso o \hyperlink{classPilhaEncadeada_1_1Disco}{Disco} em uso não seja válido será retornado o numero de codigo de erro: ERRO\_\-MOVIMENTO. 
+
+0 (inteiro zero) = caso o objeto tenha sido adicionado com sucesso. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Pilha.cpp.
+
+
+
+References PilhaEncadeada::Disco::diametro, diametroTopo, ERRO\_\-MOVIMENTO, PilhaEncadeada::Disco::origem, PilhaEncadeada::Disco::proximo, tamanho, topo, and vazia().
+
+
+
+Referenced by PilhaEncadeada::TorresDeHanoi::fazerJogadaSeguinte(), PilhaEncadeada::TorresDeHanoi::moverMenor(), PilhaEncadeada::TorresDeHanoi::resolverImpar(), PilhaEncadeada::TorresDeHanoi::resolverPar(), and PilhaEncadeada::TorresDeHanoi::TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_ae4484368aedfccd43d2515466d6582f9}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!vazia@{vazia}}
+\index{vazia@{vazia}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{vazia}]{\setlength{\rightskip}{0pt plus 5cm}bool PilhaEncadeada::Pilha::vazia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPilhaEncadeada_1_1Pilha_ae4484368aedfccd43d2515466d6582f9}
+Método que compara a variavel tamanho com a constante LISTA\_\-VAZIA.
+
+\begin{DoxyReturn}{Returns}
+true se a pilha estiver vazia. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Pilha.cpp.
+
+
+
+References PILHA\_\-VAZIA, and tamanho.
+
+
+
+Referenced by desempilha(), and empilha().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPilhaEncadeada_1_1Pilha_ab826a0678ab53623c85b8fd3b0a2b993}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!diametroTopo@{diametroTopo}}
+\index{diametroTopo@{diametroTopo}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{diametroTopo}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::Pilha::diametroTopo}}}
+\label{classPilhaEncadeada_1_1Pilha_ab826a0678ab53623c85b8fd3b0a2b993}
+
+
+Definition at line 44 of file Pilha.h.
+
+
+
+Referenced by desempilha(), empilha(), PilhaEncadeada::TorresDeHanoi::fazerJogadaSeguinte(), and Pilha().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_aae9cbeca741bf5ef1fbae7a6aba3ae64}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!id@{id}}
+\index{id@{id}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::Pilha::id}}}
+\label{classPilhaEncadeada_1_1Pilha_aae9cbeca741bf5ef1fbae7a6aba3ae64}
+
+
+Definition at line 42 of file Pilha.h.
+
+
+
+Referenced by desempilha(), and PilhaEncadeada::TorresDeHanoi::TorresDeHanoi().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_ae5b7e5d7daefb67f057320b4740444ab}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PilhaEncadeada::Pilha::tamanho}}}
+\label{classPilhaEncadeada_1_1Pilha_ae5b7e5d7daefb67f057320b4740444ab}
+
+
+Definition at line 43 of file Pilha.h.
+
+
+
+Referenced by desempilha(), empilha(), PilhaEncadeada::TorresDeHanoi::fazerJogadaSeguinte(), Pilha(), PilhaEncadeada::TorresDeHanoi::resolverImpar(), PilhaEncadeada::TorresDeHanoi::resolverPar(), and vazia().
+
+\hypertarget{classPilhaEncadeada_1_1Pilha_a061ad72a4dfdb0f0135c61d564801299}{
+\index{PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}!topo@{topo}}
+\index{topo@{topo}!PilhaEncadeada::Pilha@{PilhaEncadeada::Pilha}}
+\subsubsection[{topo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disco}$\ast$ {\bf PilhaEncadeada::Pilha::topo}}}
+\label{classPilhaEncadeada_1_1Pilha_a061ad72a4dfdb0f0135c61d564801299}
+
+
+Definition at line 41 of file Pilha.h.
+
+
+
+Referenced by contem(), desempilha(), empilha(), and Pilha().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{Pilha_8h}{Pilha.h}\item 
+/home/will/Programming/C++/ED/Torres\_\-de\_\-Hanoi/src/\hyperlink{Pilha_8cpp}{Pilha.cpp}\end{DoxyCompactItemize}

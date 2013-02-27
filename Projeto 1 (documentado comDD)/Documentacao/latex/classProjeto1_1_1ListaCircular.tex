@@ -1,0 +1,96 @@
+\section{\-Projeto1\-:\-:\-Lista\-Circular \-Class \-Reference}
+\label{classProjeto1_1_1ListaCircular}\index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}}
+
+
+{\ttfamily \#include $<$\-Lista\-Circular.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Lista\-Circular} ()
+\item 
+virtual {\bf $\sim$\-Lista\-Circular} ()
+\item 
+int {\bf adiciona} ({\bf \-Caixa} $\ast$caixa)
+\item 
+void {\bf mostrar\-Lista} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Elemento\-De\-Lista\-Circular} $\ast$ {\bf sentinela}
+\item 
+int {\bf tamanho}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe que modela uma lista encadeada.
+
+\-Uma lista encadeada ou lista ligada é uma estrutura de dados linear e dinâmica. \-Ela é composta por células que apontam para o próximo elemento da lista. \-Para \char`\"{}ter\char`\"{} uma lista ligada/encadeada, basta guardar seu primeiro elemento, e seu último elemento aponta para uma célula nula.\par
+ \-Para mais informações acesse\-:\par
+ {\tt http\-://pt.\-wikipedia.\-org/wiki/\-Lista\-\_\-ligada} 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!\-Lista\-Circular@{\-Lista\-Circular}}
+\index{\-Lista\-Circular@{\-Lista\-Circular}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{\-Lista\-Circular}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Projeto1\-::\-Lista\-Circular\-::\-Lista\-Circular} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1ListaCircular_ad1f1e2d58ba59c3b20d926dbee0bd68a}
+\-Método que constri um objeto que representa uma lista encadeada. \index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!$\sim$\-Lista\-Circular@{$\sim$\-Lista\-Circular}}
+\index{$\sim$\-Lista\-Circular@{$\sim$\-Lista\-Circular}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{$\sim$\-Lista\-Circular}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Projeto1\-::\-Lista\-Circular\-::$\sim$\-Lista\-Circular} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{classProjeto1_1_1ListaCircular_afcca3f790d99dc9c747d03414612c4eb}
+\-Destrutor que exclui uma lista encadeada.
+
+\-Para isso utiliza o método limpar. 
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!adiciona@{adiciona}}
+\index{adiciona@{adiciona}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{adiciona}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Lista\-Circular\-::adiciona} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Caixa} $\ast$}]{caixa}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1ListaCircular_a35dc09255c50dd5c1fbdc80ba84b1b55}
+\-Método que adiciona no início um objeto da classe \-Elemento\-De\-Lista.
+
+\-Para isso verifica se ha espaço na mesma. \-Caso a questão anterior seja verdadeira o objeto é adicionado na primeira posição da \-Lista.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em caixa} & \-: ponteiro para o caixa onde o cliente vai ser inserido.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-L\-I\-S\-R\-A\-\_\-\-C\-H\-E\-I\-A = constante que representa a falta de espaço na \-Lista. 
+
+1 = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+\index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!mostrar\-Lista@{mostrar\-Lista}}
+\index{mostrar\-Lista@{mostrar\-Lista}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{mostrar\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Projeto1\-::\-Lista\-Circular\-::mostrar\-Lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classProjeto1_1_1ListaCircular_a17fb0d61349d4898cbdeb9e86e004759}
+\-Método que imprime a \-Lista no console. 
+
+\subsection{\-Member \-Data \-Documentation}
+\index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!sentinela@{sentinela}}
+\index{sentinela@{sentinela}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{sentinela}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elemento\-De\-Lista\-Circular}$\ast$ {\bf \-Projeto1\-::\-Lista\-Circular\-::sentinela}}\label{classProjeto1_1_1ListaCircular_a20d805843e5fd2b012db44ad1e705472}
+\-Primeiro elemento da lista circular. \index{\-Projeto1\-::\-Lista\-Circular@{\-Projeto1\-::\-Lista\-Circular}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!Projeto1::ListaCircular@{\-Projeto1\-::\-Lista\-Circular}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Projeto1\-::\-Lista\-Circular\-::tamanho}}\label{classProjeto1_1_1ListaCircular_a56720f9fadf008f0a0ba3eac4fb6e52b}
+\-Tamanho da lista circular 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Lista\-Circular.\-h\item 
+src/\-Lista\-Circular.\-cpp\end{DoxyCompactItemize}

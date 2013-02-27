@@ -1,0 +1,2 @@
+plot "tempo"  w l   # plot the second data set 
+

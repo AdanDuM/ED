@@ -1,0 +1,15 @@
+18:51:22 **** Incremental Build of configuration Debug for project Listas_Projeto_4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Listas_Projeto_4
+Invoking: Cross G++ Linker
+g++  -o "Listas_Projeto_4"  ./src/Lista.o ./src/Main.o   
+Finished building target: Listas_Projeto_4
+ 
+
+18:51:23 Build Finished (took 311ms)
+

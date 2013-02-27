@@ -1,0 +1,246 @@
+\hypertarget{classCabecaDeFila}{
+\section{CabecaDeFila Class Reference}
+\label{classCabecaDeFila}\index{CabecaDeFila@{CabecaDeFila}}
+}
+
+
+{\ttfamily \#include $<$CabecaDeFila.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCabecaDeFila_aedb7917f5b1830826612196b7d4f0e35}{CabecaDeFila} ()
+\item 
+virtual \hyperlink{classCabecaDeFila_a9901d8072c4f916afd5103d9043dda7b}{$\sim$CabecaDeFila} ()
+\item 
+int \hyperlink{classCabecaDeFila_afd99e5b88ecb1f58dee6aca2f83124e7}{enfileirar} (\hyperlink{classInfoFila}{InfoFila} $\ast$dado)
+\item 
+\hyperlink{classInfoFila}{InfoFila} $\ast$ \hyperlink{classCabecaDeFila_a58364e4456bd9a7696fa6cce8713abd7}{desenfileirar} ()
+\item 
+void \hyperlink{classCabecaDeFila_ad849760dd955385f04bc92594295848e}{limpar} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classCabecaDeFila_a0ba2e2fd8b989285a492a3a9d5716e00}{primeiro}
+\item 
+\hyperlink{classElementoDeFila}{ElementoDeFila} $\ast$ \hyperlink{classCabecaDeFila_a5446294afc8bbc810363751e83fef53d}{ultimo}
+\item 
+int \hyperlink{classCabecaDeFila_a71496e069a5e360d24b91e8600a360bc}{tamanho}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCabecaDeFila_a496b0bbb3f704774f1462bcde385d644}{vazia} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que modela uma Fila Encadeada.
+
+As filas são estruturas baseadas no princípio FIFO (first in, first out), em que os elementos que foram inseridos no início são os primeiros a serem removidos. Uma fila possui duas funções básicas: Enfileirar(ENQUEUE), que adiciona um elemento ao final da fila, e Desenfileirar(DEQUEUE), que remove o elemento no início da fila. A operação Desenfileirar(DEQUEUE) só pode ser aplicado se a fila não estiver vazia, causando um erro de underflow ou fila vazia se esta operação for realizada nesta situação.
+
+Para mais informações acesse: \href{http://pt.wikipedia.org/wiki/FIFO}{\tt http://pt.wikipedia.org/wiki/FIFO} 
+
+Definition at line 48 of file CabecaDeFila.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCabecaDeFila_aedb7917f5b1830826612196b7d4f0e35}{
+\index{CabecaDeFila@{CabecaDeFila}!CabecaDeFila@{CabecaDeFila}}
+\index{CabecaDeFila@{CabecaDeFila}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{CabecaDeFila}]{\setlength{\rightskip}{0pt plus 5cm}CabecaDeFila::CabecaDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeFila_aedb7917f5b1830826612196b7d4f0e35}
+Método que constri um objeto que representa uma fila encadeado. 
+
+Definition at line 14 of file CabecaDeFila.cpp.
+
+
+
+References primeiro, tamanho, and ultimo.
+
+\hypertarget{classCabecaDeFila_a9901d8072c4f916afd5103d9043dda7b}{
+\index{CabecaDeFila@{CabecaDeFila}!$\sim$CabecaDeFila@{$\sim$CabecaDeFila}}
+\index{$\sim$CabecaDeFila@{$\sim$CabecaDeFila}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{$\sim$CabecaDeFila}]{\setlength{\rightskip}{0pt plus 5cm}CabecaDeFila::$\sim$CabecaDeFila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCabecaDeFila_a9901d8072c4f916afd5103d9043dda7b}
+Destrutor que exclui uma fila encadeada.
+
+Para isso utiliza o método limpar. 
+
+Definition at line 26 of file CabecaDeFila.cpp.
+
+
+
+References limpar().
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCabecaDeFila_a58364e4456bd9a7696fa6cce8713abd7}{
+\index{CabecaDeFila@{CabecaDeFila}!desenfileirar@{desenfileirar}}
+\index{desenfileirar@{desenfileirar}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{desenfileirar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfoFila} $\ast$ CabecaDeFila::desenfileirar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeFila_a58364e4456bd9a7696fa6cce8713abd7}
+Método que remove um elemento da Fila. Primeiramente testa se a Fila possui elementos. Caso possua ele remove o primeiro elemento, ou seja o primeiro que foi inserido.
+
+\begin{DoxyReturn}{Returns}
+0(NULL) = caso a Fila não possua elementos. 
+
+\hyperlink{classInfoFila}{InfoFila} = objeto que possui as informações do elemento removido. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file CabecaDeFila.cpp.
+
+
+
+References FILA\_\-VAZIA, ElementoDeFila::info, primeiro, ElementoDeFila::proximo, tamanho, ultimo, and vazia().
+
+
+
+Referenced by lerCasoDeTeste(), and mostrarMenuPrincipal().
+
+\hypertarget{classCabecaDeFila_afd99e5b88ecb1f58dee6aca2f83124e7}{
+\index{CabecaDeFila@{CabecaDeFila}!enfileirar@{enfileirar}}
+\index{enfileirar@{enfileirar}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{enfileirar}]{\setlength{\rightskip}{0pt plus 5cm}int CabecaDeFila::enfileirar (
+\begin{DoxyParamCaption}
+\item[{{\bf InfoFila} $\ast$}]{dado}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeFila_afd99e5b88ecb1f58dee6aca2f83124e7}
+Método que adiciona um elemento da fila.
+
+Primeiramente teste se ainda é possivel adicionar um elemento à fila. Caso isso não seja verdadeiro ele retorna uma constante FILA\_\-CHEIA.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classInfoFila}{InfoFila}} & $\ast$dado= ponteiro para um objeto da classe \hyperlink{classInfoFila}{InfoFila}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FILA\_\-CHEIA = constante que representa a falta de espaço na Fila. 
+
+tamanho = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file CabecaDeFila.cpp.
+
+
+
+References FILA\_\-CHEIA, InfoFila::mostrar(), primeiro, ElementoDeFila::proximo, tamanho, ultimo, and vazia().
+
+
+
+Referenced by lerCasoDeTeste(), and mostrarMenuPrincipal().
+
+\hypertarget{classCabecaDeFila_ad849760dd955385f04bc92594295848e}{
+\index{CabecaDeFila@{CabecaDeFila}!limpar@{limpar}}
+\index{limpar@{limpar}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{limpar}]{\setlength{\rightskip}{0pt plus 5cm}void CabecaDeFila::limpar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCabecaDeFila_ad849760dd955385f04bc92594295848e}
+Método que exclui todos os elementos da fila e suas respectivas informações, representado pela classe InfoLista. 
+
+Definition at line 94 of file CabecaDeFila.cpp.
+
+
+
+References FILA\_\-VAZIA, ElementoDeFila::info, primeiro, ElementoDeFila::proximo, and tamanho.
+
+
+
+Referenced by mostrarMenuPrincipal(), and $\sim$CabecaDeFila().
+
+\hypertarget{classCabecaDeFila_a496b0bbb3f704774f1462bcde385d644}{
+\index{CabecaDeFila@{CabecaDeFila}!vazia@{vazia}}
+\index{vazia@{vazia}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{vazia}]{\setlength{\rightskip}{0pt plus 5cm}bool CabecaDeFila::vazia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCabecaDeFila_a496b0bbb3f704774f1462bcde385d644}
+Metodo que testa se a fila possui elementos.
+
+\begin{DoxyReturn}{Returns}
+true = caso a Fila esteja vazia. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file CabecaDeFila.cpp.
+
+
+
+References FILA\_\-VAZIA, and tamanho.
+
+
+
+Referenced by desenfileirar(), and enfileirar().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCabecaDeFila_a0ba2e2fd8b989285a492a3a9d5716e00}{
+\index{CabecaDeFila@{CabecaDeFila}!primeiro@{primeiro}}
+\index{primeiro@{primeiro}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{primeiro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila}$\ast$ {\bf CabecaDeFila::primeiro}}}
+\label{classCabecaDeFila_a0ba2e2fd8b989285a492a3a9d5716e00}
+
+
+Definition at line 52 of file CabecaDeFila.h.
+
+
+
+Referenced by CabecaDeFila(), desenfileirar(), enfileirar(), and limpar().
+
+\hypertarget{classCabecaDeFila_a71496e069a5e360d24b91e8600a360bc}{
+\index{CabecaDeFila@{CabecaDeFila}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CabecaDeFila::tamanho}}}
+\label{classCabecaDeFila_a71496e069a5e360d24b91e8600a360bc}
+
+
+Definition at line 53 of file CabecaDeFila.h.
+
+
+
+Referenced by CabecaDeFila(), desenfileirar(), enfileirar(), limpar(), and vazia().
+
+\hypertarget{classCabecaDeFila_a5446294afc8bbc810363751e83fef53d}{
+\index{CabecaDeFila@{CabecaDeFila}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!CabecaDeFila@{CabecaDeFila}}
+\subsubsection[{ultimo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeFila} $\ast$ {\bf CabecaDeFila::ultimo}}}
+\label{classCabecaDeFila_a5446294afc8bbc810363751e83fef53d}
+
+
+Definition at line 52 of file CabecaDeFila.h.
+
+
+
+Referenced by CabecaDeFila(), desenfileirar(), and enfileirar().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{CabecaDeFila_8h}{CabecaDeFila.h}\item 
+src/\hyperlink{CabecaDeFila_8cpp}{CabecaDeFila.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+20:22:13 **** Incremental Build of configuration Debug for project ArvoreBalanceada ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building file: ../src/Nodo.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Nodo.d" -MT"src/Nodo.d" -o "src/Nodo.o" "../src/Nodo.cpp"
+Finished building: ../src/Nodo.cpp
+ 
+Building target: AVL
+Invoking: Cross G++ Linker
+g++  -o "AVL"  ./src/Main.o ./src/Nodo.o   
+Finished building target: AVL
+ 
+
+20:22:14 Build Finished (took 510ms)
+

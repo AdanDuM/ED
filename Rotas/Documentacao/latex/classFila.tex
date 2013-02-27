@@ -1,0 +1,119 @@
+\hypertarget{classFila}{\section{\-Fila \-Class \-Reference}
+\label{classFila}\index{\-Fila@{\-Fila}}
+}
+
+
+{\ttfamily \#include $<$\-Fila.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classFila_a7e05da16d38699987e60e54371c6e775}{enfileirar} (int num\-Linha, char $\ast$empresa, \hyperlink{classListaDupla}{\-Lista\-Dupla} $\ast$lista)
+\item 
+\hyperlink{classListaDupla}{\-Lista\-Dupla} $\ast$ \hyperlink{classFila_a81aa8ac237a3202862fe0f8dfaa1ecb7}{desenfileirar} ()
+\item 
+void \hyperlink{classFila_aa16f0272d183b2138a7e073beb750d99}{limpar} ()
+\item 
+void \hyperlink{classFila_ad3287e330b085067454db700229b6201}{mostrar} ()
+\item 
+int \hyperlink{classFila_a46909d036a60e134221715be69eed2e0}{buscar} (char $\ast$origem, char $\ast$destino, int hora)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFila_a207e2c051b9986d677789e18e6e40f7c}{\hyperlink{classElementoFila}{\-Elemento\-Fila} $\ast$ {\bfseries primeiro}}\label{classFila_a207e2c051b9986d677789e18e6e40f7c}
+
+\item 
+\hypertarget{classFila_a4d4213a5c61bc598dec6b792724b64ea}{\hyperlink{classElementoFila}{\-Elemento\-Fila} $\ast$ {\bfseries ultimo}}\label{classFila_a4d4213a5c61bc598dec6b792724b64ea}
+
+\item 
+\hypertarget{classFila_a46bbd844d92a49df2f9f1dff542301db}{int {\bfseries tamanho}}\label{classFila_a46bbd844d92a49df2f9f1dff542301db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe que modela uma \hyperlink{classFila}{\-Fila} \-Encadeada.
+
+\-As filas são estruturas baseadas no princípio \-F\-I\-F\-O (first in, first out), em que os elementos que foram inseridos no início são os primeiros a serem removidos. \-Uma fila possui duas funções básicas\-: \-Enfileirar(\-E\-N\-Q\-U\-E\-U\-E), que adiciona um elemento ao final da fila, e \-Desenfileirar(\-D\-E\-Q\-U\-E\-U\-E), que remove o elemento no início da fila. \-A operação \-Desenfileirar(\-D\-E\-Q\-U\-E\-U\-E) só pode ser aplicado se a fila não estiver vazia, causando um erro de underflow ou fila vazia se esta operação for realizada nesta situação.
+
+\-Para mais informações acesse\-: \href{http://pt.wikipedia.org/wiki/FIFO}{\tt http\-://pt.\-wikipedia.\-org/wiki/\-F\-I\-F\-O} 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classFila_a46909d036a60e134221715be69eed2e0}{\index{\-Fila@{\-Fila}!buscar@{buscar}}
+\index{buscar@{buscar}!Fila@{\-Fila}}
+\subsubsection[{buscar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Fila\-::buscar} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{origem, }
+\item[{char $\ast$}]{destino, }
+\item[{int}]{hora}
+\end{DoxyParamCaption}
+)}}\label{classFila_a46909d036a60e134221715be69eed2e0}
+\-Método que verifica se existe uma rota e/ou é possivel que o passageiro a compre.
+
+\-Para isso este metodo percorre toda a lista de empresas e fila de cidades por onde a rota passa. caso seja encontrada uma rota compatível o método imprime a mesma no console e retorna um valor inteiro.
+
+origem = cidade onde o passageiro iniciará sua viagem. 
+\begin{DoxyParams}{\-Parameters}
+{\em destino} & = cidade destino do passageiro. \\
+\hline
+{\em hora} & = hora local em que o passageiro se encontra. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classFila_a81aa8ac237a3202862fe0f8dfaa1ecb7}{\index{\-Fila@{\-Fila}!desenfileirar@{desenfileirar}}
+\index{desenfileirar@{desenfileirar}!Fila@{\-Fila}}
+\subsubsection[{desenfileirar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Lista\-Dupla} $\ast$ {\bf \-Fila\-::desenfileirar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFila_a81aa8ac237a3202862fe0f8dfaa1ecb7}
+\-Método que remove um elemento da \hyperlink{classFila}{\-Fila}. \-Primeiramente testa se a \hyperlink{classFila}{\-Fila} possui elementos. \-Caso possua ele remove o primeiro elemento, ou seja o primeiro que foi inserido.
+
+\begin{DoxyReturn}{\-Returns}
+0(\-N\-U\-L\-L) = caso a \hyperlink{classFila}{\-Fila} não possua elementos. 
+
+\-Info\-Fila = objeto que possui as informações do elemento removido. 
+\end{DoxyReturn}
+\hypertarget{classFila_a7e05da16d38699987e60e54371c6e775}{\index{\-Fila@{\-Fila}!enfileirar@{enfileirar}}
+\index{enfileirar@{enfileirar}!Fila@{\-Fila}}
+\subsubsection[{enfileirar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Fila\-::enfileirar} (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Linha, }
+\item[{char $\ast$}]{empresa, }
+\item[{{\bf \-Lista\-Dupla} $\ast$}]{lista}
+\end{DoxyParamCaption}
+)}}\label{classFila_a7e05da16d38699987e60e54371c6e775}
+\-Método que adiciona um elemento da fila.
+
+\-Primeiramente teste se ainda é possivel adicionar um elemento à fila. \-Caso isso não seja verdadeiro ele retorna uma constante \-F\-I\-L\-A\-\_\-\-C\-H\-E\-I\-A.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-Info\-Fila} & $\ast$dado= ponteiro para um objeto da classe \-Info\-Fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-F\-I\-L\-A\-\_\-\-C\-H\-E\-I\-A = constante que representa a falta de espaço na \hyperlink{classFila}{\-Fila}. 
+
+tamanho = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+\hypertarget{classFila_aa16f0272d183b2138a7e073beb750d99}{\index{\-Fila@{\-Fila}!limpar@{limpar}}
+\index{limpar@{limpar}!Fila@{\-Fila}}
+\subsubsection[{limpar}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fila\-::limpar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFila_aa16f0272d183b2138a7e073beb750d99}
+\-Método que exclui todos os elementos da fila e suas respectivas informações, representado pela classe \hyperlink{classInfoLista}{\-Info\-Lista}. \hypertarget{classFila_ad3287e330b085067454db700229b6201}{\index{\-Fila@{\-Fila}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Fila@{\-Fila}}
+\subsubsection[{mostrar}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fila\-::mostrar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFila_ad3287e330b085067454db700229b6201}
+\-Método que imprime no console a \hyperlink{classFila}{\-Fila}. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Fila.\-h\item 
+src/\-Fila.\-cpp\end{DoxyCompactItemize}

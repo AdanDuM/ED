@@ -1,0 +1,14 @@
+set key left box
+set samples 100
+set multiplot layout 2,1       # engage multiplot mode
+
+#set size 0.4,0.4       # set the size of the second plot in 
+#set origin 0.15,0.5    # set the origin for the second plot
+
+plot "TempoXDesistencias"  w l   # plot the second data set 
+
+#set size 0.6,0.6       # set the size of the second plot in 
+#set origin 0.15,0.5    # set the origin for the second plot
+
+plot "TempoXLucro"  w l   # plot the second data set 
+unset multiplot

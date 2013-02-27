@@ -1,0 +1,15 @@
+16:59:50 **** Incremental Build of configuration Debug for project ProjetoFinal ****
+make all 
+Building file: ../src/ArvoreB.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArvoreB.d" -MT"src/ArvoreB.d" -o "src/ArvoreB.o" "../src/ArvoreB.cpp"
+Finished building: ../src/ArvoreB.cpp
+ 
+Building target: ProjetoFinal
+Invoking: Cross G++ Linker
+g++  -o "ProjetoFinal"  ./src/ArvoreB.o ./src/Dados.o ./src/Main.o ./src/Nodo.o   
+Finished building target: ProjetoFinal
+ 
+
+16:59:51 Build Finished (took 312ms)
+

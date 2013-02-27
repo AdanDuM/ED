@@ -1,0 +1,385 @@
+\hypertarget{classProjeto1_1_1Supermercado}{
+\section{Projeto1::Supermercado Class Reference}
+\label{classProjeto1_1_1Supermercado}\index{Projeto1::Supermercado@{Projeto1::Supermercado}}
+}
+
+
+{\ttfamily \#include $<$Supermercado.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1Supermercado_a712c285ce22c7b4cd0f4982484fcb092}{Supermercado} ()
+\item 
+\hyperlink{classProjeto1_1_1Supermercado_abb21b74f59b760e1e020bd706ad317ce}{Supermercado} (\hyperlink{classProjeto1_1_1ListaCircular}{ListaCircular} $\ast$\hyperlink{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}{caixas}, int tempClientes, int tempoTotal)
+\item 
+virtual \hyperlink{classProjeto1_1_1Supermercado_a45e97c3a5c1b125fb2ad826270ba29eb}{$\sim$Supermercado} ()
+\item 
+void \hyperlink{classProjeto1_1_1Supermercado_a95984fac6635ea22f660e4038266b132}{iniciarSimulacao} ()
+\item 
+\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$ \hyperlink{classProjeto1_1_1Supermercado_a8182c122d2b8141f34c423762433c4f2}{gerarCliente} (int horario)
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a006f42c2ab267236c96c5037230dd43a}{posicionarCliente} (\hyperlink{classProjeto1_1_1Cliente}{Cliente} $\ast$novo)
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a7f998920216d84164f1feeda811aa7a4}{atenderClientes} (int horario)
+\item 
+void \hyperlink{classProjeto1_1_1Supermercado_a9e2055bab0973293e53c24154256a126}{chamarCaixaEspecial} ()
+\item 
+void \hyperlink{classProjeto1_1_1Supermercado_a918550e12e3f815b5aff5b5449886342}{configurarSimulacao} (char $\ast$nome, int \hyperlink{classProjeto1_1_1Supermercado_a6ec7501178b500d6a82330c99f95867e}{tempoSimulacao}, int \hyperlink{Main_8cpp_a0b097839315eb6a33ba1e11ce290fc9b}{tempoMedioChegada}, int \hyperlink{classProjeto1_1_1Supermercado_a11e5d386fe154d3e8ee3d8f7fa3d28a1}{limiteCaixaEspecial}, \hyperlink{classProjeto1_1_1ListaCircular}{ListaCircular} $\ast$\hyperlink{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}{caixas})
+\item 
+void \hyperlink{classProjeto1_1_1Supermercado_a1c5c7fba6e33df1e597a2ab446dd5dd7}{apresentarResultados} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1ListaCircular}{ListaCircular} $\ast$ \hyperlink{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}{caixas}
+\item 
+char $\ast$ \hyperlink{classProjeto1_1_1Supermercado_a05fc2f885e22cf0d109d921d0f386baa}{nomeSupermercado}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a91df73523b452afac103edea5862f651}{tempoMedioClientes}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a6ec7501178b500d6a82330c99f95867e}{tempoSimulacao}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a258d2c48df71a1827f83e2658aa1e26d}{desistencias}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_adcecd89e129cf0486b6ce02d162c4a55}{faturamentoBruto}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_af210ce3a01e004c464d8abb03c74fedc}{valorDesistencias}
+\item 
+int \hyperlink{classProjeto1_1_1Supermercado_a11e5d386fe154d3e8ee3d8f7fa3d28a1}{limiteCaixaEspecial}
+\item 
+bool \hyperlink{classProjeto1_1_1Supermercado_a5e49476334361f1d056f5394a517a763}{caixaEspecialchamado}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Supermercado.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjeto1_1_1Supermercado_a712c285ce22c7b4cd0f4982484fcb092}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!Supermercado@{Supermercado}}
+\index{Supermercado@{Supermercado}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{Supermercado}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Supermercado::Supermercado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a712c285ce22c7b4cd0f4982484fcb092}
+Costrutor que gera um objeto da classe supermercado. 
+
+Definition at line 21 of file Supermercado.cpp.
+
+
+
+References caixas, limiteCaixaEspecial, and tempoSimulacao.
+
+\hypertarget{classProjeto1_1_1Supermercado_abb21b74f59b760e1e020bd706ad317ce}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!Supermercado@{Supermercado}}
+\index{Supermercado@{Supermercado}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{Supermercado}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Supermercado::Supermercado (
+\begin{DoxyParamCaption}
+\item[{{\bf ListaCircular} $\ast$}]{c, }
+\item[{int}]{tempClientes, }
+\item[{int}]{tempoTotal}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_abb21b74f59b760e1e020bd706ad317ce}
+Costrutor que gera um objeto da classe supermercado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & : Pponteiro para Lista Circular de caixas do supermercado. \\
+\hline
+{\em tempClientes} & : Tempo médio de chegada de clientes. \\
+\hline
+{\em tempoTotal} & : Tempo total da simulação. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Supermercado.cpp.
+
+
+
+References caixas, limiteCaixaEspecial, and tempoSimulacao.
+
+\hypertarget{classProjeto1_1_1Supermercado_a45e97c3a5c1b125fb2ad826270ba29eb}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!$\sim$Supermercado@{$\sim$Supermercado}}
+\index{$\sim$Supermercado@{$\sim$Supermercado}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{$\sim$Supermercado}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::Supermercado::$\sim$Supermercado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1Supermercado_a45e97c3a5c1b125fb2ad826270ba29eb}
+
+
+Definition at line 46 of file Supermercado.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classProjeto1_1_1Supermercado_a1c5c7fba6e33df1e597a2ab446dd5dd7}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!apresentarResultados@{apresentarResultados}}
+\index{apresentarResultados@{apresentarResultados}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{apresentarResultados}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Supermercado::apresentarResultados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a1c5c7fba6e33df1e597a2ab446dd5dd7}
+Método que gera os resultados finais da execução. 
+
+Definition at line 198 of file Supermercado.cpp.
+
+
+
+References Projeto1::Caixa::apresentarRelatorio(), Projeto1::ElementoDeListaCircular::caixa, caixas, Projeto1::Caixa::clientesAtendidos, Projeto1::Caixa::faturamentoTotal, Projeto1::Caixa::fornecaLucro(), nomeSupermercado, Projeto1::ElementoDeListaCircular::proximo, Projeto1::ListaCircular::sentinela, Projeto1::ListaCircular::tamanho, and tempoSimulacao.
+
+
+
+Referenced by main().
+
+\hypertarget{classProjeto1_1_1Supermercado_a7f998920216d84164f1feeda811aa7a4}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!atenderClientes@{atenderClientes}}
+\index{atenderClientes@{atenderClientes}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{atenderClientes}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::Supermercado::atenderClientes (
+\begin{DoxyParamCaption}
+\item[{int}]{horario}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a7f998920216d84164f1feeda811aa7a4}
+Método que atended um cliente.
+
+Para isso ele percorre todos os caixas e verifica se o primeiro cliente da fila deve ser atendido, ou seja, se o tempo de saida desse cliente é igual ao tempo atual de execução.
+
+
+\begin{DoxyParams}{Parameters}
+{\em horario} & : hora atual de execução. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file Supermercado.cpp.
+
+
+
+References Projeto1::Caixa::atenderCliente(), Projeto1::ElementoDeListaCircular::caixa, caixas, Projeto1::ElementoDeListaCircular::proximo, and Projeto1::ListaCircular::sentinela.
+
+\hypertarget{classProjeto1_1_1Supermercado_a9e2055bab0973293e53c24154256a126}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!chamarCaixaEspecial@{chamarCaixaEspecial}}
+\index{chamarCaixaEspecial@{chamarCaixaEspecial}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{chamarCaixaEspecial}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Supermercado::chamarCaixaEspecial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a9e2055bab0973293e53c24154256a126}
+Método que chama (constrói) um caixa do tipo caixa expecial. 
+
+Definition at line 174 of file Supermercado.cpp.
+
+
+
+References Projeto1::ListaCircular::adiciona(), Projeto1::ElementoDeListaCircular::caixa, caixas, limiteCaixaEspecial, Projeto1::ElementoDeListaCircular::proximo, Projeto1::ListaCircular::sentinela, and Projeto1::Caixa::tamanhoFila.
+
+\hypertarget{classProjeto1_1_1Supermercado_a918550e12e3f815b5aff5b5449886342}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!configurarSimulacao@{configurarSimulacao}}
+\index{configurarSimulacao@{configurarSimulacao}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{configurarSimulacao}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Supermercado::configurarSimulacao (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome, }
+\item[{int}]{tempoS, }
+\item[{int}]{tempoMedioC, }
+\item[{int}]{limiteCaixaEsp, }
+\item[{{\bf ListaCircular} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a918550e12e3f815b5aff5b5449886342}
+Método que configura a simulação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & : nome do supermercado. \\
+\hline
+{\em tempoS} & : tempo de simulação. \\
+\hline
+{\em tempoMedioC} & : tempo médio de chegada de clientes. \\
+\hline
+{\em limiteCaixaEsp,:} & limite de todas as filas antes de chamar o \hyperlink{classProjeto1_1_1Caixa}{Caixa} Especial \\
+\hline
+{\em c} & : lista de caixas; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Supermercado.cpp.
+
+
+
+References caixas, limiteCaixaEspecial, nomeSupermercado, and tempoSimulacao.
+
+
+
+Referenced by main().
+
+\hypertarget{classProjeto1_1_1Supermercado_a8182c122d2b8141f34c423762433c4f2}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!gerarCliente@{gerarCliente}}
+\index{gerarCliente@{gerarCliente}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{gerarCliente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cliente} $\ast$ Projeto1::Supermercado::gerarCliente (
+\begin{DoxyParamCaption}
+\item[{int}]{horario}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a8182c122d2b8141f34c423762433c4f2}
+Método que gera um cliente do supremercado, decidindo o tipo do mesmo.
+
+Existem dois tipos de clientes, os que buscam a fila com menos clientes e os que buscam uma fila com menor numero de produtos dos outros clientes. 
+
+Definition at line 97 of file Supermercado.cpp.
+
+
+
+References Projeto1::BuscaFilaComMenosProdutos, Projeto1::BuscaMenorFila, and Projeto1::Cliente::tipo.
+
+\hypertarget{classProjeto1_1_1Supermercado_a95984fac6635ea22f660e4038266b132}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!iniciarSimulacao@{iniciarSimulacao}}
+\index{iniciarSimulacao@{iniciarSimulacao}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{iniciarSimulacao}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::Supermercado::iniciarSimulacao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a95984fac6635ea22f660e4038266b132}
+Método que executa a simulação.
+
+Para isso percorre segundo a segundo executando os passos da simulação. 
+
+Definition at line 71 of file Supermercado.cpp.
+
+
+
+References tempoSimulacao.
+
+
+
+Referenced by main().
+
+\hypertarget{classProjeto1_1_1Supermercado_a006f42c2ab267236c96c5037230dd43a}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!posicionarCliente@{posicionarCliente}}
+\index{posicionarCliente@{posicionarCliente}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{posicionarCliente}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::Supermercado::posicionarCliente (
+\begin{DoxyParamCaption}
+\item[{{\bf Cliente} $\ast$}]{novo}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1Supermercado_a006f42c2ab267236c96c5037230dd43a}
+Método que posiciona um cliente na fila de um caixa, de acordo com seu tipo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo} & : \hyperlink{classProjeto1_1_1Cliente}{Cliente} a ser posicionado. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file Supermercado.cpp.
+
+
+
+References Projeto1::BuscaFilaComMenosProdutos, Projeto1::BuscaMenorFila, Projeto1::ElementoDeListaCircular::caixa, caixas, FATOR\_\-IRRITACAO, MAX\_\-CAIXA, Projeto1::ElementoDeListaCircular::proximo, Projeto1::Caixa::receberCliente(), Projeto1::ListaCircular::sentinela, Projeto1::Caixa::tamanhoFila, Projeto1::Cliente::tipo, Projeto1::Caixa::totalProdutos, and Projeto1::Cliente::valorCompras.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classProjeto1_1_1Supermercado_a5e49476334361f1d056f5394a517a763}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!caixaEspecialchamado@{caixaEspecialchamado}}
+\index{caixaEspecialchamado@{caixaEspecialchamado}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{caixaEspecialchamado}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Projeto1::Supermercado::caixaEspecialchamado}}}
+\label{classProjeto1_1_1Supermercado_a5e49476334361f1d056f5394a517a763}
+Informação se um caixa especial já foi chamado. 
+
+Definition at line 37 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!caixas@{caixas}}
+\index{caixas@{caixas}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{caixas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ListaCircular}$\ast$ {\bf Projeto1::Supermercado::caixas}}}
+\label{classProjeto1_1_1Supermercado_a0377fe11973f887d33fc7c743dd499de}
+Lista de caixas. 
+
+Definition at line 21 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a258d2c48df71a1827f83e2658aa1e26d}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!desistencias@{desistencias}}
+\index{desistencias@{desistencias}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{desistencias}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::desistencias}}}
+\label{classProjeto1_1_1Supermercado_a258d2c48df71a1827f83e2658aa1e26d}
+Número de clientes que desistiram. 
+
+Definition at line 29 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_adcecd89e129cf0486b6ce02d162c4a55}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!faturamentoBruto@{faturamentoBruto}}
+\index{faturamentoBruto@{faturamentoBruto}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{faturamentoBruto}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::faturamentoBruto}}}
+\label{classProjeto1_1_1Supermercado_adcecd89e129cf0486b6ce02d162c4a55}
+Faturamento bruto do supermercado. 
+
+Definition at line 31 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a11e5d386fe154d3e8ee3d8f7fa3d28a1}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!limiteCaixaEspecial@{limiteCaixaEspecial}}
+\index{limiteCaixaEspecial@{limiteCaixaEspecial}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{limiteCaixaEspecial}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::limiteCaixaEspecial}}}
+\label{classProjeto1_1_1Supermercado_a11e5d386fe154d3e8ee3d8f7fa3d28a1}
+Limite para chamar um caixa especial. 
+
+Definition at line 35 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a05fc2f885e22cf0d109d921d0f386baa}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!nomeSupermercado@{nomeSupermercado}}
+\index{nomeSupermercado@{nomeSupermercado}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{nomeSupermercado}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Projeto1::Supermercado::nomeSupermercado}}}
+\label{classProjeto1_1_1Supermercado_a05fc2f885e22cf0d109d921d0f386baa}
+Nome do supermercado. 
+
+Definition at line 23 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a91df73523b452afac103edea5862f651}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!tempoMedioClientes@{tempoMedioClientes}}
+\index{tempoMedioClientes@{tempoMedioClientes}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{tempoMedioClientes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::tempoMedioClientes}}}
+\label{classProjeto1_1_1Supermercado_a91df73523b452afac103edea5862f651}
+Tempo medio de chegada de clientes. 
+
+Definition at line 25 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_a6ec7501178b500d6a82330c99f95867e}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!tempoSimulacao@{tempoSimulacao}}
+\index{tempoSimulacao@{tempoSimulacao}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{tempoSimulacao}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::tempoSimulacao}}}
+\label{classProjeto1_1_1Supermercado_a6ec7501178b500d6a82330c99f95867e}
+Tempo de Simulação. 
+
+Definition at line 27 of file Supermercado.h.
+
+\hypertarget{classProjeto1_1_1Supermercado_af210ce3a01e004c464d8abb03c74fedc}{
+\index{Projeto1::Supermercado@{Projeto1::Supermercado}!valorDesistencias@{valorDesistencias}}
+\index{valorDesistencias@{valorDesistencias}!Projeto1::Supermercado@{Projeto1::Supermercado}}
+\subsubsection[{valorDesistencias}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::Supermercado::valorDesistencias}}}
+\label{classProjeto1_1_1Supermercado_af210ce3a01e004c464d8abb03c74fedc}
+Prejuiso gerado pelas desistências. 
+
+Definition at line 33 of file Supermercado.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Supermercado_8h}{Supermercado.h}\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{Supermercado_8cpp}{Supermercado.cpp}\end{DoxyCompactItemize}

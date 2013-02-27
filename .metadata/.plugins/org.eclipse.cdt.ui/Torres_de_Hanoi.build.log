@@ -1,0 +1,30 @@
+14:47:51 **** Incremental Build of configuration Debug for project Torres_de_Hanoi ****
+make all 
+Building file: ../src/Disco.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Disco.d" -MT"src/Disco.d" -o "src/Disco.o" "../src/Disco.cpp"
+Finished building: ../src/Disco.cpp
+ 
+Building file: ../src/Main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building file: ../src/Pilha.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Pilha.d" -MT"src/Pilha.d" -o "src/Pilha.o" "../src/Pilha.cpp"
+Finished building: ../src/Pilha.cpp
+ 
+Building file: ../src/TorresDeHanoi.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TorresDeHanoi.d" -MT"src/TorresDeHanoi.d" -o "src/TorresDeHanoi.o" "../src/TorresDeHanoi.cpp"
+Finished building: ../src/TorresDeHanoi.cpp
+ 
+Building target: Torres_de_Hanoi
+Invoking: Cross G++ Linker
+g++  -o "Torres_de_Hanoi"  ./src/Disco.o ./src/Main.o ./src/Pilha.o ./src/TorresDeHanoi.o   
+Finished building target: Torres_de_Hanoi
+ 
+
+14:47:52 Build Finished (took 764ms)
+

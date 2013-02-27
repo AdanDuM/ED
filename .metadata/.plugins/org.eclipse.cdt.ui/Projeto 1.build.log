@@ -1,0 +1,15 @@
+21:09:23 **** Incremental Build of configuration Debug for project Projeto 1 ****
+make all 
+Building file: ../src/Supermercado.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Supermercado.d" -MT"src/Supermercado.d" -o "src/Supermercado.o" "../src/Supermercado.cpp"
+Finished building: ../src/Supermercado.cpp
+ 
+Building target: Projeto 1
+Invoking: Cross G++ Linker
+g++  -o "Projeto 1"  ./src/Caixa.o ./src/CaixaEspecial.o ./src/Cliente.o ./src/ElementoDaListaCircular.o ./src/ElementoDeFila.o ./src/ListaCircular.o ./src/Main.o ./src/Supermercado.o   
+Finished building target: Projeto 1
+ 
+
+21:09:23 Build Finished (took 356ms)
+

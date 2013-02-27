@@ -1,0 +1,168 @@
+\hypertarget{classProjeto1_1_1ListaCircular}{
+\section{Projeto1::ListaCircular Class Reference}
+\label{classProjeto1_1_1ListaCircular}\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+}
+
+
+{\ttfamily \#include $<$ListaCircular.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1ListaCircular_ad768f1dc2214dd586457b237f646c7a8}{ListaCircular} ()
+\item 
+virtual \hyperlink{classProjeto1_1_1ListaCircular_afcca3f790d99dc9c747d03414612c4eb}{$\sim$ListaCircular} ()
+\item 
+int \hyperlink{classProjeto1_1_1ListaCircular_a35dc09255c50dd5c1fbdc80ba84b1b55}{adiciona} (\hyperlink{classProjeto1_1_1Caixa}{Caixa} $\ast$caixa)
+\item 
+void \hyperlink{classProjeto1_1_1ListaCircular_a17fb0d61349d4898cbdeb9e86e004759}{mostrarLista} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjeto1_1_1ElementoDeListaCircular}{ElementoDeListaCircular} $\ast$ \hyperlink{classProjeto1_1_1ListaCircular_a20d805843e5fd2b012db44ad1e705472}{sentinela}
+\item 
+int \hyperlink{classProjeto1_1_1ListaCircular_a56720f9fadf008f0a0ba3eac4fb6e52b}{tamanho}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classProjeto1_1_1ListaCircular_a119baef55c9b1494d0307e18495270d1}{vazia} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que modela uma lista encadeada.
+
+Uma lista encadeada ou lista ligada é uma estrutura de dados linear e dinâmica. Ela é composta por células que apontam para o próximo elemento da lista. Para \char`\"{}ter\char`\"{} uma lista ligada/encadeada, basta guardar seu primeiro elemento, e seu último elemento aponta para uma célula nula.\par
+ Para mais informações acesse:\par
+ \href{http://pt.wikipedia.org/wiki/Lista_ligada}{\tt http://pt.wikipedia.org/wiki/Lista\_\-ligada} 
+
+Definition at line 43 of file ListaCircular.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjeto1_1_1ListaCircular_ad768f1dc2214dd586457b237f646c7a8}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!ListaCircular@{ListaCircular}}
+\index{ListaCircular@{ListaCircular}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{ListaCircular}]{\setlength{\rightskip}{0pt plus 5cm}home will Programming C ED Projeto src {\bf ListaCircular} cpp Projeto1::ListaCircular::ListaCircular (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1ListaCircular_ad768f1dc2214dd586457b237f646c7a8}
+Método que constroi um objeto que representa uma lista encadeada. 
+
+Definition at line 17 of file ListaCircular.cpp.
+
+\hypertarget{classProjeto1_1_1ListaCircular_afcca3f790d99dc9c747d03414612c4eb}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!$\sim$ListaCircular@{$\sim$ListaCircular}}
+\index{$\sim$ListaCircular@{$\sim$ListaCircular}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{$\sim$ListaCircular}]{\setlength{\rightskip}{0pt plus 5cm}Projeto1::ListaCircular::$\sim$ListaCircular (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classProjeto1_1_1ListaCircular_afcca3f790d99dc9c747d03414612c4eb}
+Destrutor que exclui uma lista encadeada.
+
+Para isso utiliza o método limpar. 
+
+Definition at line 29 of file ListaCircular.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classProjeto1_1_1ListaCircular_a35dc09255c50dd5c1fbdc80ba84b1b55}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!adiciona@{adiciona}}
+\index{adiciona@{adiciona}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{adiciona}]{\setlength{\rightskip}{0pt plus 5cm}int Projeto1::ListaCircular::adiciona (
+\begin{DoxyParamCaption}
+\item[{{\bf Caixa} $\ast$}]{caixa}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1ListaCircular_a35dc09255c50dd5c1fbdc80ba84b1b55}
+Método que adiciona no início um objeto da classe ElementoDeLista.
+
+Para isso verifica se ha espaço na mesma. Caso a questão anterior seja verdadeira o objeto é adicionado na primeira posição da Lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em InfoLista} & $\ast$dado= ponteiro para um objeto da classe InfoLista.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LISTA\_\-CHEIA = constante que representa a falta de espaço na Lista. 
+
+1 = inteiro que informa a posição onde o dado foi inserido. 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file ListaCircular.cpp.
+
+
+
+Referenced by Projeto1::Supermercado::chamarCaixaEspecial(), and lerConfig().
+
+\hypertarget{classProjeto1_1_1ListaCircular_a17fb0d61349d4898cbdeb9e86e004759}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!mostrarLista@{mostrarLista}}
+\index{mostrarLista@{mostrarLista}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{mostrarLista}]{\setlength{\rightskip}{0pt plus 5cm}void Projeto1::ListaCircular::mostrarLista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classProjeto1_1_1ListaCircular_a17fb0d61349d4898cbdeb9e86e004759}
+Método que imprime a Lista no console. 
+
+Definition at line 65 of file ListaCircular.cpp.
+
+\hypertarget{classProjeto1_1_1ListaCircular_a119baef55c9b1494d0307e18495270d1}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!vazia@{vazia}}
+\index{vazia@{vazia}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{vazia}]{\setlength{\rightskip}{0pt plus 5cm}bool Projeto1::ListaCircular::vazia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classProjeto1_1_1ListaCircular_a119baef55c9b1494d0307e18495270d1}
+Método que informa se a Lista está vazia. 
+
+Definition at line 80 of file ListaCircular.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classProjeto1_1_1ListaCircular_a20d805843e5fd2b012db44ad1e705472}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!sentinela@{sentinela}}
+\index{sentinela@{sentinela}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{sentinela}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ElementoDeListaCircular}$\ast$ {\bf Projeto1::ListaCircular::sentinela}}}
+\label{classProjeto1_1_1ListaCircular_a20d805843e5fd2b012db44ad1e705472}
+Primeiro elemento da lista circular. 
+
+Definition at line 48 of file ListaCircular.h.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados(), Projeto1::Supermercado::atenderClientes(), Projeto1::Supermercado::chamarCaixaEspecial(), and Projeto1::Supermercado::posicionarCliente().
+
+\hypertarget{classProjeto1_1_1ListaCircular_a56720f9fadf008f0a0ba3eac4fb6e52b}{
+\index{Projeto1::ListaCircular@{Projeto1::ListaCircular}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!Projeto1::ListaCircular@{Projeto1::ListaCircular}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Projeto1::ListaCircular::tamanho}}}
+\label{classProjeto1_1_1ListaCircular_a56720f9fadf008f0a0ba3eac4fb6e52b}
+Tamanho da lista circular 
+
+Definition at line 50 of file ListaCircular.h.
+
+
+
+Referenced by Projeto1::Supermercado::apresentarResultados().
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{ListaCircular_8h}{ListaCircular.h}\item 
+/home/will/Programming/C++/ED/Projeto 1/src/\hyperlink{ListaCircular_8cpp}{ListaCircular.cpp}\end{DoxyCompactItemize}

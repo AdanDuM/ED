@@ -1,0 +1,6 @@
+20:25:09 **** Incremental Build of configuration Debug for project CheckInOrder ****
+make all 
+make: Nothing to be done for `all'.
+
+20:25:09 Build Finished (took 59ms)
+
