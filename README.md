@@ -32,6 +32,7 @@ Para isso começamos modificando o destrutor da classe Thread, verificando que a
 </p>
 <br>
 
+
 ####thread.cc
 
 ```c++
@@ -137,3 +138,4 @@ Alarm::~Alarm()
 
     unlock();
 }
+```
