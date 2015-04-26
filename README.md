@@ -128,7 +128,7 @@ comum a outros alarmes. Além de ser boa prática que o realizador da criação 
 #####alarm.cc
 
 ```c++
-\\~Alarm
+
 Alarm::~Alarm()
 {
     lock();
