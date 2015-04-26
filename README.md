@@ -33,7 +33,7 @@ Para isso começamos modificando o destrutor da classe Thread, verificando que a
 <br>
 
 
-####thread.cc
+#####thread.cc
 
 ```c++
 
@@ -74,6 +74,7 @@ Thread::~Thread()
 
     kfree(_stack);
 }
+
 ```
 ### Destrução de Sincronizadores do sistema
 <p style='text-align: justify;'>
