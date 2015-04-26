@@ -125,10 +125,10 @@ Também pensamos em deletar o Handler do alarme, porém percebemos que este pode
 comum a outros alarmes. Além de ser boa prática que o realizador da criação seja encarregado pela deleção.
 </p>
 <br>
-####alarm.cc
+#####alarm.cc
 
 ```c++
-
+\\~Alarm
 Alarm::~Alarm()
 {
     lock();
