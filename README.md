@@ -30,8 +30,10 @@ Para isso começamos modificando o destrutor da classe Thread, verificando que a
  _ joining seja liberada, assim ela não se mantem bloqueada eternamente. Se o estado for FINISHING, a thread
  já executou o metodo exit, com isso garantimos a liberação de todos os recursos da thread.
 </p>
+<br>
 
 ####thread.cc
+
 ```c++
 Thread::~Thread()
 {
@@ -84,6 +86,7 @@ bloqueados eternamente
 </p>
 
 ####mutex.cc
+
 ```c++
 Mutex::~Mutex()
 {
@@ -96,6 +99,7 @@ Mutex::~Mutex()
 ```
 
 ####semaphore.cc
+
 ```c++
 Semaphore::~Semaphore()
 {
@@ -105,6 +109,7 @@ Semaphore::~Semaphore()
 ```
 
 ####condition.cc
+
 ```c++
 Condition::~Condition() {
     db<Synchronizer>(TRC) << "~Condition(this=" << this << ")" << endl;
@@ -120,6 +125,7 @@ comum a outros alarmes. Além de ser boa prática que o realizador da criação 
 </p>
 
 ####alarm.cc
+
 ```c++
 Alarm::~Alarm()
 {
