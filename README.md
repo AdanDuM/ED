@@ -36,6 +36,7 @@ Para isso começamos modificando o destrutor da classe Thread, verificando que a
 ####thread.cc
 
 ```c++
+
 Thread::~Thread()
 {
     lock();
