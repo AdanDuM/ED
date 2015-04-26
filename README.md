@@ -124,10 +124,11 @@ No destrutor do alarme já se cuida da remoção dele da fila de requests, confo
 Também pensamos em deletar o Handler do alarme, porém percebemos que este pode ser
 comum a outros alarmes. Além de ser boa prática que o realizador da criação seja encarregado pela deleção.
 </p>
-
+<br>
 ####alarm.cc
 
 ```c++
+
 Alarm::~Alarm()
 {
     lock();
